@@ -8,11 +8,15 @@ import { NoopAnimationsModule } from '@angular/platform-browser/animations';
 import {MatIconModule} from '@angular/material/icon';
 import { SliderComponent } from './components/slider/slider.component';
 import { HttpClientModule } from '@angular/common/http';
+import { CarouselModule } from './components/carousel/carousel.module';
+import { HomeComponent } from './pages/home/home.component';
+
 @NgModule({
   declarations: [
     AppComponent,
     NavComponent,
-    SliderComponent
+    SliderComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
@@ -20,10 +24,12 @@ import { HttpClientModule } from '@angular/common/http';
     NoopAnimationsModule,
     MatIconModule,
     MatToolbarModule,
-    HttpClientModule
-  ],
+    HttpClientModule,
+    CarouselModule
+  ],  
+  exports: [SliderComponent, AppComponent],
   providers: [],
-  bootstrap: [AppComponent], entryComponents: [SliderComponent],
+  bootstrap: [AppComponent],
 })
 export class AppModule { 
 

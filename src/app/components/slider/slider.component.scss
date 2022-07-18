@@ -1,15 +1,13 @@
-
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
+
 img {
   width: calc(100vw - 17px);
   height: 100vh;
 }
-
-
 
 .container {
   height: 100vh ;
@@ -25,10 +23,7 @@ img {
   background-position: center;
   will-change: opacity ;
   transition: opacity .3s;
-
 }
-
-
 
 .slide-button:hover, .slide-button-select {
   width: 64px !important;
@@ -37,21 +32,18 @@ img {
   transition: background-color .4s, width 4s cubic-bezier(0.190, 1.000, 0.220, 1.000) !important;
 }
 
-
 .slide-button {
   width: 30px;
   height: 4px;
   background-color: rgba(255,255,255,.5);
   cursor: pointer;
   position: absolute;
-
 }
 
 .slide-button-parent-container {
   position: relative;
   margin: 22px 0;
   min-height: 4px;
-  
 }
 
 .slider {
@@ -62,11 +54,8 @@ img {
   min-width: 30px;
 }
 
-
-
 .select-box {
   min-height: 10px;
-  
 }
 
 .text-container {
@@ -91,4 +80,3 @@ img {
   opacity: 1;
   transition: 1s;
 }
-

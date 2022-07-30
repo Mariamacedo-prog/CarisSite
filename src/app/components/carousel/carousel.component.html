@@ -1,5 +1,5 @@
 
-<div *ngIf="images &&  images.length > 0 && !shortCaroulsel" class="carousel-container" >
+<div *ngIf="images &&  images.length > 0 " class="carousel-container" >
  <div *ngFor="let image of images; let i = index">
   <div  class="carousel-linear"  >
     <img class="fade"  [src]="image.img" [alt]="image.alt" [ngClass]="{'image-active': selectedIndex === i}">
@@ -20,24 +20,6 @@
       [ngClass]="{'active': selectedIndex === i}"
       (click)="selectItem(i)"
     ></span>
-  </div>
-
-  <button *ngIf="controls" class="btn-carousel btn-prev">
-    <div class=" icon-carousel ">
-      <mat-icon (click)="onPrevClick()" aria-hidden="true" aria-label="arrow back">arrow_back</mat-icon>
-    </div>
-  </button>
-
-  <button *ngIf="controls" class="btn-carousel btn-next">
-    <div class=" icon-carousel ">
-      <mat-icon (click)="onNextClick()" aria-hidden="true" aria-label="arrow forward">arrow_forward</mat-icon>
-    </div>
-  </button>
-</div>
-  
-<div *ngIf="images &&  images.length > 0 && shortCaroulsel"  class="row-container" >
-  <div *ngFor="let image of images; let i = index" class="row-images">
-      <img  [src]="image.img" [alt]="image.alt" >
   </div>
 
   <button *ngIf="controls" class="btn-carousel btn-prev">

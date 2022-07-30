@@ -1,0 +1,56 @@
+
+ <!--- 
+  
+  <div class="movieRow" >
+
+  <div class="movieRow--listArea">
+    <div class="movieRow--list"  [style]="'width:' + images.length * 600 + 'px ;' + 'margin-left:' + scrollX +'px'">
+      <div *ngFor="let image of images; let i = index" class="movieRow--item" (mouseover)="mouseInImage=true; seeItem(i)" (mouseout)="mouseInImage=false; seeItem(i)" >
+        <img [style]=" 'height: ' + heightSlider + 'px'" [src]="image.img" [alt]="image.alt" [ngClass]="{'image-active': selectedIndex === i}">
+        <p *ngIf="mouseInImage && seeItemvalue === i" class="movieRow--item--title title-active"> <b>{{image.text.title}}</b> | {{image.text.status}} </p>
+      </div>
+    </div>
+
+  </div>
+
+  <div (click)="handleLeftArrow ()" >
+    <mat-icon (click)="handleLeftArrow ()" aria-hidden="true" aria-label="arrow back">arrow_back</mat-icon>
+  </div>
+  <div  (click)="handleRightArrow ()">
+    <mat-icon (click)="handleRightArrow ()" aria-hidden="true" aria-label="arrow forward">arrow_forward</mat-icon>
+  </div>
+</div>
+
+---->
+
+
+<div class="movieRow" style="padding-top: 80px">
+
+  <div >
+    <div class="movieRow--listArea" >
+      <div class="testeimagemPrincipal" >
+        <img *ngIf="itemAtual !== 0" [src]="images[itemAtual - 1].img" [alt]="images[itemAtual - 1].alt" class="testeImagemApagadaEsquerda" >
+        <div >
+          <p style="font-size:30px; margin-bottom:-30px; letter-spacing: 3px; display: flex; justify-content: space-between;"> <span style=" color:  rgb(166, 154, 146);"> ▶ </span> <b> EMPREENDIMENTOS</b>  CARIS   <a class="btn-more" >VER TODOS | <span style="font-size: 9px;margin-left:8px;">▼</span></a></p>
+          <img class="testeimagem" [src]="images[itemAtual].img" [alt]="images[itemAtual].alt" >
+
+          <div class="testeButton" >
+            <p class="movieRow--item--title title-active"> <b>{{images[itemAtual].text.title}}</b> | {{images[itemAtual].text.status}} </p>
+            <div >
+              <mat-icon (click)="handleLeftArrow ()" aria-hidden="true" style="cursor: pointer;" aria-label="arrow back">arrow_back</mat-icon>
+              <mat-icon (click)="handleRightArrow ()" aria-hidden="true" style="cursor: pointer;" aria-label="arrow forward">arrow_forward</mat-icon>
+            </div>
+          </div>
+          
+        </div>
+        <div class="testeImagemApagadaDireita">
+          <img class="imagemApagadaDireita" *ngIf="itemAtual < images.length - 1" [alt]="images[itemAtual]"  style="width: calc(100% -300px )" [src]="images[itemAtual + 1].img" [alt]="images[itemAtual + 1].alt"  >
+        </div>
+      
+      </div>
+
+
+    </div>
+  </div>
+
+</div>

@@ -1,82 +1,120 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
+$display: none;
 
-img {
-  width: calc(100vw - 17px);
-  height: 100vh;
-}
-
-.container {
-  height: 100vh ;
+.movieRow {
+  margin-bottom: 30px;
   overflow: hidden;
+  max-height: 100vh;
 }
 
-.img-container {
-  position: absolute;
-  left: 0;
-  opacity: 0;
-  height: auto !important;
-  background-size: cover;
-  background-position: center;
-  will-change: opacity ;
-  transition: opacity .3s;
+/**********************
+Como foi feito a area de rolagem dos filmes: listArea, liste e item;
+**********************/
+
+.image-active{
+  widows: 900px;
+  transform: scale(1);
+  filter: grayscale(0);
 }
 
-.slide-button:hover, .slide-button-select {
-  width: 64px !important;
-  background-color: rgba(255,255,255,1) !important;
-  pointer-events: none;
-  transition: background-color .4s, width 4s cubic-bezier(0.190, 1.000, 0.220, 1.000) !important;
+.title-active{
+  margin-top:10px;
+  font-size: 21px;
+  color:  rgb(166, 154, 146);
+  letter-spacing: 1px;
+  display: block;
 }
 
-.slide-button {
-  width: 30px;
-  height: 4px;
-  background-color: rgba(255,255,255,.5);
+.btn-more{
   cursor: pointer;
-  position: absolute;
-}
-
-.slide-button-parent-container {
-  position: relative;
-  margin: 22px 0;
-  min-height: 4px;
-}
-
-.slider {
-  position: absolute;
-  top: 50%;
-  right: 80px;
-  opacity: 1;
-  min-width: 30px;
-}
-
-.select-box {
-  min-height: 10px;
-}
-
-.text-container {
-  height: 100vh;
-  justify-content: center;
   display: flex;
   align-items: center;
-  flex-direction: column;
+  border-radius: 5px;
+  padding: 5px 10px ;
+  color: #fff;
+  font-size: 15px;
+  background-color: rgb(166, 154, 146);
+  transition: all 0.4s ease;
 }
 
-.page-text {
-  min-height: 373px;
-  width: 50%;
-  height: 100%;
-  opacity: 0;
-  font-weight: 300;
-  font-size: 90px;
-  color: white; 
+.btn-more:hover{
+  cursor: pointer;
+  font-weight: bold;
+  background-color: rgb(178, 164, 155);
 }
 
-.selected {
-  opacity: 1;
-  transition: 1s;
+
+
+
+@media (max-width: 1323px) {
+  .testeImagemApagadaEsquerda{
+    display: none;
+  }
+  
+  .testeImagemApagadaDireita{
+    display: none;
+  }
+  .imagemApagadaDireita{
+    display: none;
+  }
+}
+
+
+
+/**********************
+Como foi feito a area de rolagem dos filmes: listArea, liste e item;
+**********************/
+
+
+.testeImagemApagadaEsquerda{
+  overflow: hidden;
+  width: 600px;
+  left: -300px;
+  position:absolute;
+  transition: all ease 0.2s;
+  filter: grayscale(0.9);
+  height: 300px;
+}
+
+.testeImagemApagadaDireita{
+  overflow-x: hidden;
+  width:600px;
+  position:absolute;
+  right: 0;
+
+  transition: all ease 0.2s;
+  filter: grayscale(0.9);
+}
+
+.imagemApagadaDireita{
+  height: 300px;
+  width:600px;
+  margin-left: 300px;
+}
+
+.testeimagemPrincipal{
+
+  padding-left: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.testeimagem{
+
+  width: 700px;
+  height: 400px;
+  cursor: pointer;
+  transition: all ease 0.5s;
+  margin-top: 60px;
+}
+
+.testeimagem:hover{
+  width: 800px;
+  height: 450px;
+}
+
+.testeButton{
+  display: flex;
+  align-items: center; 
+  justify-content: space-between;
 }

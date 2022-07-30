@@ -18,18 +18,8 @@ export class SliderComponent implements OnInit {
   scrollX = 0;
   selectedIndex = 0;
   handleLeftArrow (){
-    // let x = scrollX + Math.round(window.innerWidth / 3);
-    // if (window.innerWidth  > x) {
-    //   if( this.scrollX < 0){
-    //     this.scrollX = (this.scrollX + x);
-    //     if(this.selectedIndex === 0){
-    //       this.selectedIndex = this.images.length - 1;
-    //     }else{
-    //       this.selectedIndex--;
-    //     }
-    //   }
-    // }
-    if(this.itemAtual <= this.images.length){
+
+    if(this.itemAtual <= this.images.length  && this.itemAtual !== 0){
       this.itemAtual--;
     }else{
       this.itemAtual = 0;
@@ -41,24 +31,10 @@ export class SliderComponent implements OnInit {
   }
 
   handleRightArrow (){
-    // let x = scrollX - Math.round(window.innerWidth / 3);
-    // let listW = this.images.length * 600;
-    // console.log(this.scrollX, (window.innerWidth - listW), this.images.length * 600)
-    // if (window.innerWidth - listW >= this.scrollX) {
-    //   this.scrollX = window.innerWidth - listW + 60;
-    // }else{
-    //   this.scrollX = this.scrollX + x;
-    //   if(this.selectedIndex === this.images.length - 1){
-    //     this.selectedIndex = 0;
-    //   }else{
-    //     this.selectedIndex ++;
-    //   }
-    // }
-    
-    if(this.itemAtual >= 0){
+    if(this.itemAtual >= 0 && this.itemAtual <= this.images.length - 1){
       this.itemAtual++
     }else{
-      this.itemAtual = 0;
+      this.itemAtual = this.images.length - 1;
     }
 
 

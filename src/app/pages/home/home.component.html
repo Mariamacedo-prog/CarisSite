@@ -1,7 +1,8 @@
 
 <app-carousel [images]="images" [autoSlide]="true"></app-carousel>
 <div class="quem-somos">
-  <div class="squad-area" >
+  
+  <div class="squad-area"  style="justify-content: flex-end;">
     <div class="squad-1"></div>
     <div class="squad-2"></div>
     <div style="margin-top:50px">
@@ -27,7 +28,11 @@
     <p [class]=" showQuemSomos ? 'aparecer quem-somos-subtitulo' : 'esconder quem-somos-subtitulo'">{{info.subtitulo}}</p>
     <p [class]=" showQuemSomos ? 'aparecer quem-somos-texto' : 'esconder quem-somos-texto'" >{{info.texto}}</p>
     <div></div>
-    <div><span>NOSSAS REDES SOCIAIS</span>   </div>     
+
+    <iframe  style="margin-top: 20px;" width="70%" height="40%"
+    src="../../../assets/CarisVideo.mp4">
+    </iframe>
+    <div class="social-media"><i style="margin-right: 20px;">NOSSAS REDES SOCIAIS </i> <a class='fab fa-facebook-square link-social-media' style='font-size:20px'></a> <a class='fab fa-instagram  link-social-media' style='font-size:20px'></a> <a class=' link-social-media	fab fa-twitter-square' style='font-size:20px'></a> </div>     
 
   </div>
 

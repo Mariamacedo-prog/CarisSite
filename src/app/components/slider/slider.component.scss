@@ -45,21 +45,6 @@ Como foi feito a area de rolagem dos filmes: listArea, liste e item;
 
 
 
-@media (max-width: 1323px) {
-  .testeImagemApagadaEsquerda{
-    display: none;
-  }
-  
-  .testeImagemApagadaDireita{
-    display: none;
-  }
-  .imagemApagadaDireita{
-    display: none;
-  }
-}
-
-
-
 /**********************
 Como foi feito a area de rolagem dos filmes: listArea, liste e item;
 **********************/
@@ -117,4 +102,104 @@ Como foi feito a area de rolagem dos filmes: listArea, liste e item;
   display: flex;
   align-items: center; 
   justify-content: space-between;
+}
+
+.info--title--caris{
+  font-size:30px; 
+  margin-bottom:-30px; 
+  letter-spacing: 3px; 
+  display: flex; 
+  justify-content: space-between;
+}
+
+
+
+
+@media (max-width: 1323px) {
+  .testeimagem{
+    width: 550px;
+    height: 300px;
+  }
+
+  .testeImagemApagadaDireita{
+    width: 200px;
+    height: 200px;
+    padding-right: 500px;
+    overflow: hidden;
+  }
+
+  .testeImagemApagadaEsquerda{
+    width:200px;
+    height: 200px;
+    left: 0;
+  }
+
+  .imagemApagadaDireita{
+   width:200px;
+   height: 200px;
+
+  }
+}
+
+@media (max-width: 1123px) {
+  .testeImagemApagadaEsquerda{
+    display: none;
+  }
+  
+  .testeImagemApagadaDireita{
+    display: none;
+  }
+
+  .imagemApagadaDireita{
+    display: none;
+  }
+  .info--title--caris{
+    font-size: 20px; 
+    margin-bottom:-30px; 
+    letter-spacing: 3px; 
+
+  }
+  .title-active{
+
+    font-size:17px;
+
+  }
+}
+
+@media (max-width: 700px) {
+  .info--title--caris{
+    font-size: 13px; 
+    margin-bottom:-30px; 
+    letter-spacing: 3px;
+    flex-direction: column;
+  }
+  .title-active{
+    font-size:12px;
+  }
+  .testeButton{
+    flex-direction: column;
+  }
+
+  .testeimagem{
+    width: calc(100vw - 10px) ;
+    height: 80% ;
+  }
+  .testeimagem:hover{
+    width: calc(100vw - 10px) ;
+    height: 80% ;
+  }
+  .buttons{
+    padding-right: 20px;
+    display: flex;
+    width: 100% ;
+    justify-content: space-between;
+  }
+
+  .btn-more{
+    margin-top: 20px;
+    width: 120px;
+    padding: 5px ;
+    font-size: 9px;
+  }
+  
 }

@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, HostListener, Inject } from '@angular/core';
 
 @Component({
   selector: 'app-home',
@@ -10,11 +10,28 @@ export class HomeComponent implements OnInit {
     subtitulo: "Lorem Ipsum is simply dummy text of the printing and. ",
     texto: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages."
   }
-  constructor() { }
+  showQuemSomos:boolean = false;
+  constructor(
+
+  ) { }
 
   ngOnInit(): void {
   }
 
+
+  
+    @HostListener("window:scroll", []) onWindowScroll() {
+        // do some stuff here when the window is scrolled
+        const verticalOffset = window.pageYOffset 
+              || document.documentElement.scrollTop 
+              || document.body.scrollTop || 0;
+
+        if(verticalOffset >= 210){
+          this.showQuemSomos = true
+        }else{
+          this.showQuemSomos = false
+        }
+    }
   
   images = [
     {

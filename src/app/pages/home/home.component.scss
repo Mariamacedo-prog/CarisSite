@@ -13,15 +13,18 @@
   font-size: 35px;
   margin-bottom: 30px;
   margin-top: 60px;
+  transition: all 0.5s ease;
 }
 .quem-somos-subtitulo{
   color:  rgb(166, 154, 146);
   font-weight: bold;
   margin-bottom: 15px;
+  transition: all 0.5s ease;
 }
 .quem-somos-texto{
   padding: 15px;
   color:  rgb(180, 167, 158);
+  transition: all 0.5s ease;
 }
 .content-quem-somos{
   background-color:#fff;
@@ -39,7 +42,6 @@
   align-items: flex-end;
   margin-top: -90px;
 }
-
 .squad-marrom-2{
   margin: 0px 10px;
   line-height:0;
@@ -136,3 +138,48 @@
 }
 
 
+.aparecer{
+  animation-name: fade;
+  animation-duration: 2s;
+  visibility: block;
+}
+
+.esconder{
+  visibility:hidden;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@media (max-width: 1123px) {
+  .squad-area{
+    display: none;
+  }
+}
+
+@media (max-width: 700px) {
+  .squad-area{
+    display: none;
+  }
+  .quem-somos-titulo {
+    font-size: 22px;
+    margin-bottom: 15px;
+    margin-top: 30px;
+  }
+  .quem-somos-subtitulo{
+    padding: 10px;
+  }
+  .quem-somos-texto{
+    padding: 10px;
+
+  }
+  .content-quem-somos{
+    padding: 5px;
+  }
+}

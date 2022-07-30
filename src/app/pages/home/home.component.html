@@ -1,8 +1,7 @@
 
-<app-carousel [images]="images"></app-carousel>
+<app-carousel [images]="images" [autoSlide]="true"></app-carousel>
 <div class="quem-somos">
-
-  <div class="squad-area">
+  <div class="squad-area" >
     <div class="squad-1"></div>
     <div class="squad-2"></div>
     <div style="margin-top:50px">
@@ -19,16 +18,17 @@
     </div>
   </div>
 
-  <div class="content-quem-somos">
-    <div class="quem-somos-titulo" style="display: flex; align-items: center; flex-direction:column;">
+  <div  class="content-quem-somos">
+    <div [class]=" showQuemSomos ? 'aparecer quem-somos-titulo' : 'esconder quem-somos-titulo'" style="display: flex;align-items: center; flex-direction:column;">
       <p  >QUEM <span style="font-weight: bold;">SOMOS?</span></p>
       <div style="height: 2px; width: 35px; background-color: rgb(122, 112, 106); margin-top: 15px;"></div>
     </div>
 
-    <p  class="quem-somos-subtitulo">{{info.subtitulo}}</p>
-    <p class="quem-somos-texto">{{info.texto}}</p>
+    <p [class]=" showQuemSomos ? 'aparecer quem-somos-subtitulo' : 'esconder quem-somos-subtitulo'">{{info.subtitulo}}</p>
+    <p [class]=" showQuemSomos ? 'aparecer quem-somos-texto' : 'esconder quem-somos-texto'" >{{info.texto}}</p>
     <div></div>
-    <div></div>
+    <div><span>NOSSAS REDES SOCIAIS</span>   </div>     
+
   </div>
 
   <div class="squad-area">

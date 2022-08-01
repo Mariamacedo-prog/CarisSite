@@ -36,8 +36,6 @@ export class SliderComponent implements OnInit {
     }else{
       this.itemAtual = this.images.length - 1;
     }
-
-
   };
 
 

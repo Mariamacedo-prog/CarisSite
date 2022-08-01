@@ -27,11 +27,18 @@ $background-hover   :  rgb(18, 18, 18);
 }
 
 .link-social-media{
-  background-color:#fff;
+  background-color:rgb(166, 154, 146);
   width:20px;
   margin: 10px;
   border-radius:25%;
+  transition: all ease 1s;
 }
+.link-social-media:hover{
+  margin: -1px;
+  background-color: #fff;
+  width: 22px;
+}
+
 
 .footer-endereço{
   display: flex;

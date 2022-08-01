@@ -12,8 +12,8 @@
           <div class="testeButton" >
             <p class="movieRow--item--title title-active"> <b>{{images[itemAtual].text.title}}</b> | {{images[itemAtual].text.status}} </p>
             <div class="buttons">
-              <mat-icon (click)="handleLeftArrow ()" aria-hidden="true" style="cursor: pointer;" aria-label="arrow back">arrow_back</mat-icon>
-              <mat-icon (click)="handleRightArrow ()" aria-hidden="true" style="cursor: pointer;" aria-label="arrow forward">arrow_forward</mat-icon>
+              <mat-icon [style]="this.itemAtual === 0 ? 'color: #ddd; cursor:  no-drop;' : 'color: black'" (click)="handleLeftArrow ()" aria-hidden="true" style="cursor: pointer;" aria-label="arrow back">arrow_back</mat-icon>
+              <mat-icon [style]="(this.itemAtual === images.length - 1) ? 'color: #ddd; cursor: no-drop;' : 'color: black'" (click)="handleRightArrow ()" aria-hidden="true" style="cursor: pointer;" aria-label="arrow forward">arrow_forward</mat-icon>
             </div>
           </div>
           

@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 
 type ListMenuType ={
@@ -11,6 +11,7 @@ type ListMenuType ={
   styleUrls: ['./nav.component.scss']
 })
 export class NavComponent implements OnInit {
+  @Input() activePage = '';
   listItemsMenu: ListMenuType[] = [{name:'Home'}, {name: 'Sobre Nós'}, {name: 'Obras'}, {name: 'Fale Conosco'}, {name:  'Contato'}]
   constructor() { }
 

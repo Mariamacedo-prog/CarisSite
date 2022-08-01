@@ -1,3 +1,8 @@
+html {
+
+  scroll-behavior: smooth;
+}
+
 .content-slider{
   overflow:hidden;
 }
@@ -140,12 +145,13 @@
 
 
 .link-social-media{
+  width: 20px;
   margin-left: 10px;
   cursor: pointer;
   transition: all 1s ease;
 }
 .link-social-media:hover{
-  color: rgb(147, 135, 127);
+  background-color: rgb(147, 135, 127);
 }
 .social-media{
   margin-top: 20px;

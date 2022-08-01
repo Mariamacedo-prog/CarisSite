@@ -1,7 +1,7 @@
+<app-nav [activePage]="'Home'"></app-nav>
 
-<app-carousel [images]="images" [autoSlide]="true"></app-carousel>
+<app-carousel  [images]="images" [autoSlide]="true"></app-carousel>
 <div class="quem-somos">
-  
   <div class="squad-area"  style="justify-content: flex-end;">
     <div class="squad-1"></div>
     <div class="squad-2"></div>
@@ -25,14 +25,26 @@
       <div style="height: 2px; width: 35px; background-color: rgb(122, 112, 106); margin-top: 15px;"></div>
     </div>
 
-    <p [class]=" showQuemSomos ? 'aparecer quem-somos-subtitulo' : 'esconder quem-somos-subtitulo'">{{info.subtitulo}}</p>
+    <p [class]=" showQuemSomos? 'aparecer quem-somos-subtitulo' : 'esconder quem-somos-subtitulo'">{{info.subtitulo}}</p>
     <p [class]=" showQuemSomos ? 'aparecer quem-somos-texto' : 'esconder quem-somos-texto'" >{{info.texto}}</p>
     <div></div>
 
-    <iframe  style="margin-top: 20px;" width="70%" height="40%"
+    <iframe [class]=" showQuemSomos   ? 'aparecer ' : 'esconder'" style="margin-top: 20px;" width="70%" height="40%"
     src="../../../assets/CarisVideo.mp4">
     </iframe>
-    <div class="social-media"><i style="margin-right: 20px;">NOSSAS REDES SOCIAIS </i> <a class='fab fa-facebook-square link-social-media' style='font-size:20px'></a> <a class='fab fa-instagram  link-social-media' style='font-size:20px'></a> <a class=' link-social-media	fab fa-twitter-square' style='font-size:20px'></a> </div>     
+    <div [class]=" showQuemSomos   ? 'aparecer ' : 'esconder'" class="social-media">
+      <i style="margin-right: 20px;">NOSSAS REDES SOCIAIS </i> 
+ 
+      <a [href]="sociaisMedias.facebook" target="blanc" >
+        <img class="link-social-media" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAAXNSR0IArs4c6QAAAwhJREFUeF7tm0uoTlEUx38XeQxQHimkMFWUSPfKI0XK0LtIkgyVkigREyaGut1EDOQxkFCUNyGPlJRyyYAyYOJ1TTz68506ru/es/Zp37u//Z29Z99p7f2t9dt7r7XO3me18H+bC2wAFgLjgaF1ZGJ69B14B1wHjgF388q35H6MAI4Ay2OyroSup4FNwGf1zQDI+FvA9BIDxtjlKTBPEDIAZyow890n6hSwWgC052/HOI0edG4TAO37jR4Gi3GIDgHoBKbGqL0HnTsFoCuSUPcT+AB8BL7VdB4GjARGl4TRJQC/Snbuj273gfPAVeAx8KOHPx0CjAOm1FbzXmCCRcFGBXAT2APcsBhRR+YRMNPSt9EAaDUeBHYCWvJlW5QAZPAq4GxZq3P9ogSwG9jnwXgNER0ApeELPDrk6AAsAq55mv3oVsADYI5H46MDsAM4UGUAs4GHjgDGAisA9R0DKBHKNz3XK35hC50HKKWVoj1lePUMWAO0A8MLrTMIhAbwBphs0DMTaQOUJQ506NOraGgAClezHIy5DCx2kC8UDQ3gCrCkUMu/AoOBT3X2u7F7fbHQAC4Cy4wW6O3urVHWLBYTAPmK12bLjIIJgMf828j8HzGXLZBWQNoCyQfE5QSfAxcKHMOL2oWlxX+MArYbBCcBSpdNrS+jwAlgvUkLv0LrgOPWIZsRwH5gV5UBOF30NuMKeAZMq+oKGAB8dbnqa7YVoKuxV9bZl1yzAVgKXKoygK3AoSoDOAxsaRQA54BtBcroUPS9UeFBgLK83poSIJ0bmltf+gCLEul12OFILJ0HpPOAdB4Q13lAcoIGAikKpChgvxlKYTCFwRQGUxhMl6OG0Ookkt4G0+1w2IKJ0Jngn4KJkCUzoQG8FICOWiGhk/PwJBwaQLsA6AztjieDXIcJDaA1K5xUEeFKV+09yIcEcBJYmwHQZ6f6Zn+GB6NchggF4AkwH/iSL54WBPkDla30VwsBQDO/WcZnV2PdjW3Nlc9PdLloLEGtPwCofF4fWKp8/ihwL6/nb7fI2FfHJiCcAAAAAElFTkSuQmCC" />
+      </a>
+      <a [href]="sociaisMedias.instagram" target="blanc"  >
+        <img class="link-social-media" src="data:image/png;base64,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"/>
+      </a>
+      <a [href]="sociaisMedias.twitter" target="blanc" >
+        <img class="link-social-media" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAAXNSR0IArs4c6QAABRJJREFUeF7tm1eIZEUUhr9VMWDA9GBGDKiomAV3RTFhQMxxURQjimB6UTAiiiKKIhgw54QBxYCYM2ZEUdgFESNiTquIgU/qyt22p+fWudVN90yft5muOuGvqlMn1J3B/2lr4HBgO2AlYNEuY0bpX78BnwHPADcBL9WVn1H7YyngemC/UbIuoOs9wFHAT86tAND454GNAgxHcco7wDaCUAFw7zRY+c6Fuhs4SAA88y+M4jIW0HmWAHjujyjAbBRZXCsAc4E1R1H7AjrPFYB5U+Cqi2IxTwD+js6eCvPGAIx3wPgIjH3A2AlOBW8etWF8CwzxLWCAZg5vpPodsBywTsriFomueOe8YdwBXwDnArcCv3Yx1NT9MOAsYPkuv38C3AacVkv3J8QrCsCFwCnAwqVWIvF5FDgY+LEB32UB0/jtgd+B5wBTXI0/EzijAY9/CyK5t8C7qXAyOwmrV5WayJxozH3AgcCfGUxcAAEwnf8lzfOYvA0s1oRPBAC35zmJ+ZHA1cBCTYT1GPMBsEXNiCg7/cSzwAbAX8AfQE9/EQFgT+ChmoZ7AHc1RXwCy3YHHolaneatnYqeGv4g8BVww2SLEwFgJvBKh7LWEu8E1gsY8WFwXqeoVYHP0xFaHXh9Aic537wIALsBj3UxdHHgYuBYYIEMIC5KHjtjSs+hKwBPABs2YRgB4Hjgqh7MNwMuB2Y1UQA4BLi94djJhrkDvUncAY0oAoDKqvRktANwKrDLJPfxTsCTkzFr8Pu6wMvAMg3G/jckAoCdlpWBbxsKst64fyq7b9oFjAPSfd6Q3YTDBLrb0ezJNwKADA2ETg9ovDSwJbA5sAawYor4vEXa0l7AA7lMogB41bh1n84V2MfxhwK35PKPAGDg402g198ntdRy5fZjvKH5JbmMIwDYSXoV2CR5W71ut6QlV5e2468EjstlEgHgaOC6XEEDGP9UyguyREUAuB/YN0tK/webi1gzWCJXVAQAEwzj7o9zhfVxvLeKoW82RQBQiKnrMD2kMDs9O9v6FJTk1gMqOSelkDcit/QcaxSNYv9OwdEdIB+Bs+xkAhQFsQQQRpdvRhm1AaCSaRxvVPhGVImW825Mj7pCbNoC8D7wQ2qvG4dfBnwd0iQ2aRVgTpv2flsAHgd2jeleZJbxiGW5MLUFwLNvZGgaOmiy7mfxs1U9si0AGm1Bc6t0FAYFwoIJdDPLVlQCABWwg7P3AEHQ6V7QyvI0uRQA1U7wPHYWTEvoWeexI6DvcRe0ppIAqIw+QeVuTmmyba6SZAiuv+nWEgvJKQ1AXQnbWyemWn1IuY5JVpBsf3n1FaN+AOAueBg4AbBRWYLWT9Xe1Uowq/MoCYANyjuAS4H3CipqnGHN0K5wccoB4OfkeGw6+tTc8237yeqQtUEblI4pRco5Dzg5s9GSJT8HgO+B84ErUjs6S1Dm4J1TWG2tv6+UA0ClyEepO+yHB/YISpG6+IbfvN6vVQZCEQAqxSxBeebNxsLpaHqobRDlVxz29gdKbQCoK/pl8gUGQa8l//BN6h7ZQ5Cs1+nI3NYaakfZ9tlaA7W4Q1gpAHrZ4E6xI6SsoaNBADB0RtcVGgMw/mBien8yM8cjcG26gob6rPZJuWsEwKcsL/ZJwLCznVldTb6w9KXGdCJftc2uAFgyFTA2niYIvAVsa/JWD04EQX/gc9WpTK78MVXm2i068yFk9fm81Zep8Pn8p6lwa94yX83yHzdg9VeyhHbGAAAAAElFTkSuQmCC"/>
+      </a>
+    </div>     
 
   </div>
 
@@ -54,6 +66,7 @@
   </div>
 
 </div>
-<div class="content-slider">
+<div  [class]=" showQuemSomos   ? 'aparecer ' : 'esconder'"  class="content-slider">
   <app-slider [images]="images" ></app-slider>
 </div>
+

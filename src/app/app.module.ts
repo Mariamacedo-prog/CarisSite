@@ -11,14 +11,16 @@ import { HttpClientModule } from '@angular/common/http';
 import { CarouselModule } from './components/carousel/carousel.module';
 import { HomeComponent } from './pages/home/home.component';
 import { FooterComponent } from './components/footer/footer.component';
-
+import { FormularioComponent } from './components/formulario/formulario.component';
+import {MatInputModule} from '@angular/material/input';
 @NgModule({
   declarations: [
     AppComponent,
     NavComponent,
     SliderComponent,
     HomeComponent,
-    FooterComponent
+    FooterComponent,
+    FormularioComponent
   ],
   imports: [
     BrowserModule,
@@ -27,7 +29,8 @@ import { FooterComponent } from './components/footer/footer.component';
     MatIconModule,
     MatToolbarModule,
     HttpClientModule,
-    CarouselModule
+    CarouselModule,
+    MatInputModule
   ],  
   exports: [SliderComponent, AppComponent],
   providers: [],

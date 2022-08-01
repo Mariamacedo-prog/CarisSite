@@ -43,4 +43,13 @@ html, body { height: 100%;  scroll-behavior: smooth;}
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 
 
-
+.button-commun{
+  border: none;
+  border-radius: 25px;
+  width: 200px;
+  color: #fff;
+  font-weight: bold;
+  height: 40px;
+  background-color:  rgb(166, 154, 146);
+  cursor: pointer;
+}

@@ -1,0 +1,42 @@
+<div>
+  <div class="buttons-list">
+    <button class="{{activeOption !== 'novoCliente'? 'button-item' :'button-item-active' }}" (click)="activeOption = 'novoCliente'">QUERO SER CLIENTE</button>
+    <button class="{{activeOption !== 'trabalhe'? 'button-item' :'button-item-active' }}" (click)="activeOption = 'trabalhe'">TRABALHE CONOSCO</button>
+    <button class="{{activeOption !== 'cliente'? 'button-item' :'button-item-active' }}" (click)="activeOption = 'cliente'">SOU CLIENTE</button>
+    <button class="{{activeOption !== 'fornecedor'? 'button-item' :'button-item-active' }}" (click)="activeOption = 'fornecedor'">SOU FORNECEDOR</button>
+  </div>
+
+  <form class="formulario-principal">
+    <mat-form-field class="full-width" appearance="fill">
+      <mat-label>Email</mat-label>
+      <input type="email" matInput placeholder="Ex. pat@example.com">
+      <mat-error>
+        Please enter a valid email address
+      </mat-error>
+      <mat-error >
+        Email is <strong>required</strong>
+      </mat-error>
+    </mat-form-field>
+
+      <mat-form-field class="full-width" appearance="fill">
+        <mat-label>Seu nome</mat-label>
+        <input type="text" matInput placeholder="Maria Macedo">
+      </mat-form-field>
+      <mat-form-field class="full-width" appearance="fill">
+        <mat-label>Telefone</mat-label>
+        <input type="text" matInput placeholder="(11) 98347-5047">
+      </mat-form-field>
+
+   
+    <mat-form-field class="full-width" appearance="fill">
+      <mat-label> Sua mensagem</mat-label>
+      <textarea matInput placeholder="Escreva aqui... " style="height:100px"></textarea>
+
+    </mat-form-field>
+    <div>
+      <button class="button-commun">ENVIAR</button>
+    </div>
+   
+  </form>
+ 
+</div>

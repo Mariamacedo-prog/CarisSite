@@ -66,8 +66,19 @@
   </div>
 
 </div>
+
 <div  [class]=" showQuemSomos   ? 'aparecer ' : 'esconder'"  class="content-slider">
   <app-slider [images]="images" ></app-slider>
 </div>
 
-<app-formulario></app-formulario>
+<div class="fale-conosco-div">
+  <div [class]=" showQuemSomos ? 'aparecer quem-somos-titulo' : 'esconder quem-somos-titulo'" style="display: flex;align-items: center; flex-direction:column;">
+    <p  > FALE <span style="font-weight: bold;">CONOSCO</span></p>
+    <div style="height: 2px; width: 35px; background-color: rgb(122, 112, 106); margin-top: 15px;"></div>
+  </div>
+  <div>
+    <p class="fale-conosco-subtitle">Envie sua mensagem que <span style="font-weight: bold;">iremos responder em breve.</span></p>
+  </div>
+  <app-formulario  class="fale-conosco-form"></app-formulario>
+</div>
+

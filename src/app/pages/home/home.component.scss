@@ -5,7 +5,9 @@ html {
 
 .content-slider{
   overflow:hidden;
+  height: 100vh;
 }
+
 .quem-somos{
   display: flex;
   height: 100vh;
@@ -173,6 +175,21 @@ html {
   visibility:hidden;
 }
 
+.fale-conosco-subtitle{
+  font-size:27px; 
+  color:rgb(69, 63, 61);
+  margin-bottom: 20px;
+}
+.fale-conosco-form{
+  width: 60%;
+  margin: 20px;
+}
+.fale-conosco-div{
+  display: flex; 
+  align-items: center; 
+  flex-direction:column
+}
+
 @keyframes fade {
   from {
     opacity: 0;
@@ -182,13 +199,24 @@ html {
   }
 }
 
+
 @media (max-width: 1123px) {
   .squad-area{
     display: none;
   }
+  .fale-conosco-form{
+    width: 100%;
+  }
 }
 
 @media (max-width: 700px) {
+  .fale-conosco-subtitle{
+    font-size: 13px;
+    margin-bottom: 10px;
+  }
+  .fale-conosco-form{
+    width: 100%;
+  }
   .squad-area{
     display: none;
   }
@@ -206,5 +234,11 @@ html {
   }
   .content-quem-somos{
     padding: 5px;
+  }
+
+  .content-slider{
+    margin-top:50px;
+    display: flex;
+    height: 80vh;
   }
 }

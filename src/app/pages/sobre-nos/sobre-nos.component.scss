@@ -22,6 +22,8 @@
   align-items: center;
   justify-content: center;
   height: 100%;
+  animation-name: fade;
+  animation-duration: 0.5s;
 }
 
 .quem-somos-titulo {
@@ -29,6 +31,8 @@
   font-size: 45px;
   margin-bottom: 30px;
   transition: all 0.5s ease;
+  animation-name: fade;
+  animation-duration: 0.5s;
 }
 
 .quem-somos-subtitulo{
@@ -36,6 +40,8 @@
   font-weight: bold;
   margin-bottom: 15px;
   transition: all 0.5s ease;
+  animation-name: fade;
+  animation-duration: 4s;
 }
 
 .quem-somos-texto{
@@ -44,6 +50,8 @@
   padding: 15px;
   color:  #ccc;
   transition: all 0.5s ease;
+  animation-name: fade;
+  animation-duration: 6s;
 }
 
 
@@ -56,15 +64,20 @@
   justify-content:center;
   color: #fff;
   height: 30%;
+  animation-name: back;
+  animation-duration: 2s;
 }
 
 .frase-socio{
   font-size: 30px;
+  animation-name: fade;
+  animation-duration: 6s;
 }
 
 .frase-autor{
   margin-top:10px;
   font-size: 22px;
+
 }
 
 .content-video{
@@ -149,5 +162,110 @@
   small{
     font-weight:  bold;
     color:rgb(84, 81, 79)
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes back {
+  from {
+    background-color: #fff;
+  }
+  to {
+    background-color: rgb(  165, 153, 145);
+  }
+}
+
+
+@media (max-width: 1123px) {
+  
+  .quem-somos-titulo {
+    font-size: 35px;
+  }
+  
+  .quem-somos-texto{
+    width: 100%;
+    padding: 5px;
+    color:  #ccc;
+  }
+}
+
+@media (max-width: 700px) { 
+  .quem-somos-titulo {
+    font-size: 20px;
+  }
+  
+  .quem-somos-texto{
+    font-size:12px;
+  }
+
+  .quem-somos-subtitulo{
+    font-size:14px;
+  }
+
+  .frase-socio{
+    font-size: 18px;
+  }
+  
+  .frase-autor{
+    margin-top:5px;
+    font-size: 15px;
+  }
+
+  .fila-txt{
+    flex-direction: column;
+  }
+
+  .txt-titulo{
+    font-size: 20px;
+  }
+  
+  .txt-conteudo{
+    margin-right: 70px;
+    margin-top:10px;
+    font-size: 11px;
+  }
+
+  .video-iframe{
+    width: 100%;
+    height: 100%;
+    margin-bottom: 50px;
+  }
+
+  .nossa-cede-titulo{
+    font-size:20px;
+    margin-bottom: 15px;
+    margin-top: 14px;
+  }
+  .nossa-cede{
+    flex-direction: column;
+  }
+  .nossa-cede-img{
+    padding: 20px;
+  }
+
+  .nossa-cede-text{
+    padding: 20px;
+    h4{
+      font-size: 20px;
+    }
+  
+    p{
+      margin-top: 10px;
+      margin-bottom: 20px;
+      width: 100%;
+      font-size: 12px;
+    }
+  
+    small{
+      font-size: 11px;
+    }
   }
 }

@@ -13,6 +13,7 @@ import { HomeComponent } from './pages/home/home.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { FormularioComponent } from './components/formulario/formulario.component';
 import {MatInputModule} from '@angular/material/input';
+import { SobreNosComponent } from './pages/sobre-nos/sobre-nos.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -20,7 +21,8 @@ import {MatInputModule} from '@angular/material/input';
     SliderComponent,
     HomeComponent,
     FooterComponent,
-    FormularioComponent
+    FormularioComponent,
+    SobreNosComponent
   ],
   imports: [
     BrowserModule,

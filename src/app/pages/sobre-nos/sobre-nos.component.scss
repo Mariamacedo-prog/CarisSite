@@ -1,0 +1,153 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+
+.content-page{
+  width: 100%;
+  padding-top: 60px;
+}
+
+.content-quem-somos{
+  background-image: url('https://fotos.vivadecora.com.br/decoracao-sala-de-estar-studioeloyefreitas-13428-proportional-height_cover_medium.jpg');
+  height: 70%;
+}
+
+.quem-somos{
+  background:  rgba(0, 0, 0, 0.70 ) ;
+  display: flex ;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.quem-somos-titulo {
+  color: #fff;
+  font-size: 45px;
+  margin-bottom: 30px;
+  transition: all 0.5s ease;
+}
+
+.quem-somos-subtitulo{
+  color: #ddd;
+  font-weight: bold;
+  margin-bottom: 15px;
+  transition: all 0.5s ease;
+}
+
+.quem-somos-texto{
+  width: 50%;
+  text-align: center;
+  padding: 15px;
+  color:  #ccc;
+  transition: all 0.5s ease;
+}
+
+
+.content-frase-socio{
+  background-color: rgb(  165, 153, 145);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content:center;
+  color: #fff;
+  height: 30%;
+}
+
+.frase-socio{
+  font-size: 30px;
+}
+
+.frase-autor{
+  margin-top:10px;
+  font-size: 22px;
+}
+
+.content-video{
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.fila-txt{
+  margin-left: 100px;
+ display: flex;
+}
+
+.txt-titulo{
+  font-weight: bolder;
+  letter-spacing: 1px;
+  font-size: 25px;
+  color:rgb(  160, 148, 141);
+}
+
+.txt-conteudo{
+  margin-right: 70px;
+  margin-top:20px;
+  color:rgb(  138, 138, 138);
+  font-size: 12px;
+}
+
+.item-txt{
+  margin-top: 50px;
+  width: 350px;
+  padding: 10px;
+  margin-bottom: 30px;
+}
+
+.video-iframe{
+  width: 900px;
+  height: 500px;
+  margin-bottom: 100px;
+}
+
+.nossa-cede-titulo {
+  color:  rgb(179, 158, 143);
+  font-size: 35px;
+  margin-bottom: 30px;
+  margin-top: 30px;
+  transition: all 0.5s ease;
+}
+
+.content-nossa-cede{
+  display: flex;
+  flex-direction: column;
+  align-items:center;
+}
+
+.nossa-cede{
+ display: flex;
+ align-items:center;
+ justify-content: center;
+ margin-bottom: 60px;
+}
+
+.nossa-cede-img{
+  width: 400px;
+  height: 200px;
+}
+.nossa-cede-text{
+  padding-left: 40px;
+
+  h4{
+    font-size: 35px;
+  }
+
+  p{
+    margin-top: 20px;
+    margin-bottom: 30px;
+    width: 400px;
+    color:rgb(  138, 138, 138);
+    font-size: 13px;
+  }
+
+  small{
+    font-weight:  bold;
+    color:rgb(84, 81, 79)
+  }
+}

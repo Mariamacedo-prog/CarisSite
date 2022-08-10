@@ -1,0 +1,67 @@
+<app-nav [activePage]="'Sobre Nós'"></app-nav>
+
+<div class="content-page">
+  <div style="height: calc(100vh -  60px);">
+    <div class="content-quem-somos">
+      <div></div>
+    
+      <div class="quem-somos">a
+    
+        <div class=" quem-somos-titulo" style="display: flex;align-items: center; flex-direction:column;">
+          <p  >QUEM <strong>SOMOS?</strong></p>
+          <div style="height: 2px; width: 35px; background-color: #fff; margin-top: 15px;"></div>
+        </div>
+       
+        <p class="quem-somos-subtitulo" >{{info.subtitulo}}</p>
+        <p class="quem-somos-texto">{{info.texto}}</p>
+      </div>
+    
+      <div></div>
+     </div>
+    
+     <div class="content-frase-socio">
+        <br/>
+        <p class="frase-socio" >{{info.fraseSocio}}</p>
+        <p class="frase-autor">{{info.autor}}</p>
+        <br/>
+     </div>
+  </div>
+
+
+ <div class="content-video">
+  <div class="fila-txt">
+    <div class="item-txt">
+      <p class="txt-titulo" >{{info.txt1.titulo}}</p>
+      <p class="txt-conteudo">{{info.txt1.conteudo}}</p>
+    </div>
+    <div class="item-txt">
+      <p class="txt-titulo" >{{info.txt2.titulo}}</p>
+      <p  class="txt-conteudo">{{info.txt2.conteudo}}</p>
+    </div>
+    <div class="item-txt">
+      <p class="txt-titulo" >{{info.txt3.titulo}}</p>
+      <p  class="txt-conteudo">{{info.txt3.conteudo}}</p>
+    </div>
+  </div>
+  <iframe class="video-iframe" style="margin-top: 20px;" width="70%" height="40%" src="../../../assets/CarisVideo.mp4"></iframe>
+ </div>
+
+ <div  class="content-nossa-cede">
+  <p  class="nossa-cede-titulo"><strong>NOSSA </strong> CEDE</p>
+  <div class="nossa-cede">
+
+    <img class="nossa-cede-img" src="https://www.plantapronta.com.br/projetos/140/01.jpg" alt="">
+
+    <div class="nossa-cede-text">
+      <h4>Agende uma visita</h4>
+      <div style="height: 2px; width: 180px; background-color: #888; margin-top: 15px;"></div>
+      <p > {{info.conteudoAgenda}}</p>
+      <small>{{info.endereco}}</small>
+    </div>
+  </div>
+  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.435801056972!2d-46.41369778518873!3d-23.552786684687135!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce65b1eae7b98f%3A0xaafefbd3b463d5fe!2sR.%20Mercado%20de%20Ferro%20-%20Vila%20Aurea%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2008411-210!5e0!3m2!1sen!2sbr!4v1660099349877!5m2!1sen!2sbr" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+ </div>
+
+
+
+</div>

@@ -1,8 +1,9 @@
 import { Component, OnInit, Input } from '@angular/core';
-
+import { Router } from '@angular/router';
 
 type ListMenuType ={
-  name: string
+  name: string,
+  link: string
 }
 
 @Component({
@@ -12,8 +13,8 @@ type ListMenuType ={
 })
 export class NavComponent implements OnInit {
   @Input() activePage = '';
-  listItemsMenu: ListMenuType[] = [{name:'Home'}, {name: 'Sobre Nós'}, {name: 'Obras'}, {name: 'Fale Conosco'}, {name:  'Contato'}]
-  constructor() { }
+  listItemsMenu: ListMenuType[] = [{name:'Home', link: '/'}, {name: 'Sobre Nós',  link: '/sobre'}, {name: 'Obras',  link: '/obras'}, {name: 'Fale Conosco',  link: '/fale-conosco'}, {name:  'Contato',  link: '/contato'}]
+  constructor( private router: Router) { }
 
   ngOnInit(): void {
   }

@@ -187,7 +187,15 @@ html {
 .fale-conosco-div{
   display: flex; 
   align-items: center; 
-  flex-direction:column
+  flex-direction:column;
+  background-color: rgb(247, 247, 247);
+}
+.fale-conosco-titulo {
+  color:  rgb(179, 158, 143);
+  font-size: 45px;
+  margin-bottom: 30px;
+  margin-top: 30px;
+  transition: all 0.5s ease;
 }
 
 @keyframes fade {
@@ -207,6 +215,12 @@ html {
   .fale-conosco-form{
     width: 100%;
   }
+  .quem-somos-titulo,.fale-conosco-titulo {
+    font-size: 29px;
+    margin-bottom: 15px;
+    margin-top: 30px;
+  }
+
 }
 
 @media (max-width: 700px) {
@@ -220,11 +234,12 @@ html {
   .squad-area{
     display: none;
   }
-  .quem-somos-titulo {
+  .quem-somos-titulo,.fale-conosco-titulo {
     font-size: 22px;
     margin-bottom: 15px;
     margin-top: 30px;
   }
+
   .quem-somos-subtitulo{
     padding: 10px;
   }

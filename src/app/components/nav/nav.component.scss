@@ -47,23 +47,10 @@ $background-hover   :  rgb(18, 18, 18);
   margin-left: 60/5;
   margin-right: 60/5;
   overflow: hidden;
-
+  text-decoration: none;
+  color: #fff;
   border:none;
-  &::before, &::after{
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    transition: all 1s ease;
-  }
-
-  a{
-    position: relative;
-    font-size: 60/2;
-    margin-top: 60/4;
-  }
+  transition: all 1s ease;
 }
 
 

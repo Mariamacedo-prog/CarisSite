@@ -1,7 +1,7 @@
 <nav class="menuContainer">
   <img class="menuContainer-logo" src="../../../assets/logo.png">
   <ol class="menuContainer-lista">
-    <li  *ngFor="let item of listItemsMenu" class="menuContainer-lista-item item-animation {{ activePage === item.name ? 'active-item': ''}}"><a>{{item.name}}</a></li>
+    <li  *ngFor="let item of listItemsMenu" ><a class="menuContainer-lista-item item-animation {{ activePage === item.name ? 'active-item': ''}} " [routerLink]="item.link" >{{item.name}}</a></li>
   </ol>
   <mat-icon class="menuButton" aria-hidden="true" aria-label="Menu Icon">menu</mat-icon>
 </nav>

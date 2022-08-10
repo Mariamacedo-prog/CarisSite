@@ -3,5 +3,12 @@
   <ol class="menuContainer-lista">
     <li  *ngFor="let item of listItemsMenu" ><a class="menuContainer-lista-item item-animation {{ activePage === item.name ? 'active-item': ''}} " [routerLink]="item.link" >{{item.name}}</a></li>
   </ol>
-  <mat-icon class="menuButton" aria-hidden="true" aria-label="Menu Icon">menu</mat-icon>
+  <mat-icon class="menuButton" aria-hidden="true" aria-label="Menu Icon" (click)="showMenu = !showMenu">menu</mat-icon>
 </nav>
+
+
+<div class="menuCelular" *ngIf="showMenu">
+  <ol >
+    <li  *ngFor="let item of listItemsMenu" ><a  [routerLink]="item.link" (click)="showMenu = false" >{{item.name}}</a></li>
+  </ol>
+</div>

@@ -13,6 +13,7 @@ type ListMenuType ={
 })
 export class NavComponent implements OnInit {
   @Input() activePage = '';
+  showMenu = false;
   listItemsMenu: ListMenuType[] = [{name:'Home', link: '/'}, {name: 'Sobre Nós',  link: '/sobre'}, {name: 'Obras',  link: '/obras'}, {name: 'Fale Conosco',  link: '/fale-conosco'}, {name:  'Contato',  link: '/contato'}]
   constructor( private router: Router) { }
 

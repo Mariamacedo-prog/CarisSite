@@ -14,6 +14,7 @@ import { FooterComponent } from './components/footer/footer.component';
 import { FormularioComponent } from './components/formulario/formulario.component';
 import {MatInputModule} from '@angular/material/input';
 import { SobreNosComponent } from './pages/sobre-nos/sobre-nos.component';
+import { ObrasComponent } from './pages/obras/obras.component';
 @NgModule({
   declarations: [
     AppComponent,

@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-
+import { DataService } from '../../data.service';
 @Component({
   selector: 'app-footer',
   templateUrl: './footer.component.html',
@@ -8,21 +8,25 @@ import { Component, OnInit } from '@angular/core';
 export class FooterComponent implements OnInit {
 
   carisInfo = {
-    rua: "Av. ezequias bezerra de farias",
-    numero: "85",
-    complemento: "Bl 25 ap 4",
-    cidade: 'Ferraz de Vasconcelos',
-    estado: 'SP',
-    cep: '03399-199',
-    telefone: '+55 (11) 98347-5047',
-    email: "caris@construtora.com",
-    facebook: 'https://www.facebook.com/mariamacedo.kamikorosu/',
-    instagram: 'https://www.instagram.com/maria.s.ma/',
-    twitter: 'https://api.whatsapp.com/send?L=pt&phone=5511983475047'
+    rua: "",
+    numero: "",
+    complemento: "",
+    cidade: "",
+    estado: "",
+    cep: "",
+    telefone: "",
+    email: "",
+    facebook: "",
+    instagram: "",
+    twitter: ""
   }
-  constructor() { }
+  constructor(private dataService: DataService) { }
 
-  ngOnInit(): void {
+  async ngOnInit() {
+    const result = await this.dataService.getData().subscribe((data: any) =>{
+      this.carisInfo = data.carisInfo;
+  })
+
   }
 
   goToStart(){

@@ -14,6 +14,7 @@ Como foi feito a area de rolagem dos filmes: listArea, liste e item;
   widows: 900px;
   transform: scale(1);
   filter: grayscale(0);
+
 }
 
 .title-active{
@@ -85,7 +86,6 @@ Como foi feito a area de rolagem dos filmes: listArea, liste e item;
 }
 
 .testeimagem{
-
   width: 700px;
   height: 400px;
   cursor: pointer;
@@ -94,8 +94,8 @@ Como foi feito a area de rolagem dos filmes: listArea, liste e item;
 }
 
 .testeimagem:hover{
-  width: 800px;
-  height: 450px;
+  width: 750px;
+  height: 420px;
 }
 
 .testeButton{
@@ -142,6 +142,7 @@ Como foi feito a area de rolagem dos filmes: listArea, liste e item;
 }
 
 @media (max-width: 1123px) {
+  
   .testeImagemApagadaEsquerda{
     display: none;
   }
@@ -153,16 +154,14 @@ Como foi feito a area de rolagem dos filmes: listArea, liste e item;
   .imagemApagadaDireita{
     display: none;
   }
+
   .info--title--caris{
     font-size: 20px; 
     margin-bottom:-30px; 
     letter-spacing: 3px; 
-
   }
   .title-active{
-
     font-size:17px;
-
   }
 }
 
@@ -182,11 +181,12 @@ Como foi feito a area de rolagem dos filmes: listArea, liste e item;
 
   .testeimagem{
     margin-left: -30px;
-    width: calc(100vw - 10px) ;
+    width: 100vw;
     height: 80% ;
   }
   .testeimagem:hover{
-    width: calc(100vw - 10px) ;
+    margin-left: -30px;
+    width: 100vw;
     height: 80% ;
   }
   .buttons{

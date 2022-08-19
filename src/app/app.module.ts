@@ -14,7 +14,8 @@ import { FooterComponent } from './components/footer/footer.component';
 import { FormularioComponent } from './components/formulario/formulario.component';
 import {MatInputModule} from '@angular/material/input';
 import { SobreNosComponent } from './pages/sobre-nos/sobre-nos.component';
-import { ObrasComponent } from './pages/obras/obras.component';
+import {ObrasModule} from './pages/obras/obras.module';
+import {ObrasRoutingModule} from './pages/obras/obras-routing.module';
 @NgModule({
   declarations: [
     AppComponent,
@@ -35,7 +36,13 @@ import { ObrasComponent } from './pages/obras/obras.component';
     CarouselModule,
     MatInputModule
   ],  
-  exports: [SliderComponent, AppComponent, NavComponent, FooterComponent],
+  exports: [ AppComponent,
+    NavComponent,
+    SliderComponent,
+    HomeComponent,
+    FooterComponent,
+    FormularioComponent,
+    SobreNosComponent],
   providers: [],
   bootstrap: [AppComponent],
 })

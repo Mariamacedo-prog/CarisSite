@@ -3,8 +3,9 @@ import { RouterModule, Routes } from '@angular/router';
 import { ObrasComponent } from './obras.component';
 
 const routes: Routes = [
-  { path: '', 
-    component: ObrasComponent,
+  { path: '', component: ObrasComponent },
+  // { path: '', 
+  //   component: ObrasComponent
   //  children: [
   //     {
   //       path: 'tab1',
@@ -16,8 +17,7 @@ const routes: Routes = [
   //       pathMatch: 'full'
   //     }
   //   ]
- 
-  }
+  // }
 ];
 
 

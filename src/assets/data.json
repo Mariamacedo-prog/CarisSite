@@ -1,4 +1,42 @@
-{
+{ 
+  "carouselArray":[
+  {"img": "../assets/images/cachoeirinha/FACHADA_CACHOEIRINHA_RF1.jpg",
+   "alt": "FACHADA CACHOEIRINHA",
+   "link": "http://www.slimcachoeirinha.com.br/",
+   "text": {
+      "title": "SLIM CACHOEIRINHA", "subtitle": "FACHADA CACHOEIRINHA", "status": "LANÇAMENTO"
+    }},
+    {"img": "../assets/images/lauzane/SLIM_LAUZANE_VARANDA_RF.jpg", 
+    "alt": "SLIM LAUZANE", 
+    "link": "http://www.slimlauzane.com.br/mobile.html",
+    "text": {
+      "title": "SLIM LAUZANE", "subtitle": "FACHADA LAUZANE", "status": "LANÇAMENTO"
+    }},
+    {"img": "../assets/images/lauzane/SLIM_LAUZANE_FESTAS_RF.jpg", 
+    "alt": "SLIM LAUZANE", 
+    "link": "http://www.slimlauzane.com.br/mobile.html",
+    "text": {
+      "title": "SLIM LAUZANE", "subtitle": "FACHADA LAUZANE", "status": "LANÇAMENTO"
+    }},
+    {"img": "../assets/images/lauzane/SLIM_LAUZANE_SUITE_RF.jpg", 
+    "alt": "SLIM LAUZANE", 
+    "link": "http://www.slimlauzane.com.br/mobile.html",
+    "text": {
+      "title": "SLIM LAUZANE", "subtitle": "FACHADA LAUZANE", "status": "LANÇAMENTO"
+    }},
+    {"img": "../assets/images/lauzane/SLIM_LAUZANE_LIVING_RF.jpg", 
+    "alt": "SLIM LAUZANE", 
+    "link": "http://www.slimlauzane.com.br/mobile.html",
+    "text": {
+      "title": "SLIM LAUZANE", "subtitle": "FACHADA LAUZANE", "status": "LANÇAMENTO"
+    }},
+    {"img": "../assets/images/lauzane/SLIM_LAUZANE_GOURMET_RF.jpg", 
+    "alt": "SLIM LAUZANE", 
+    "link": "http://www.slimlauzane.com.br/mobile.html",
+    "text": {
+      "title": "SLIM LAUZANE", "subtitle": "FACHADA LAUZANE", "status": "LANÇAMENTO"
+    }}
+  ],
   "sliderArray":[
   {"img": "../assets/images/cachoeirinha/FACHADA_CACHOEIRINHA_RF1.jpg",
    "alt": "FACHADA CACHOEIRINHA", 
@@ -45,9 +83,9 @@
     "cep": "03399-199",
     "telefone":"(11) 2972-3488",
     "email": "contato@caris-incorporadora.com.br",
-    "facebook": "https://www.facebook.com/mariamacedo.kamikorosu/",
-    "instagram": "https://www.instagram.com/maria.s.ma/",
-    "twitter": "https://api.whatsapp.com/send?L=pt&phone=5511983475047",
+    "facebook": "https://www.facebook.com",
+    "instagram": "https://instagram.com/caris_construtora?r=nametag",
+    "twitter": "https://api.whatsapp.com",
     "subtitulo": "A CARIS Incorporadora nasceu de um grupo de sócios engenheiros.",
     "texto":"Empregamos mão de obra qualificada e novas tecnologias nos processos construtivos, executando em cada etapa responsabilidade técnica e sustentável, repassando confiabilidade em cada empreendimento entregue. A CARIS proporciona excelência no atendimento e eficiência na construção de cada produto realizado, todos entregues rigorosamente dentro dos prazos acordados."
   },

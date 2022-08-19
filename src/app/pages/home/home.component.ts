@@ -11,10 +11,11 @@ export class HomeComponent implements OnInit {
     texto: ""
   }
 
-  images = [
+  imagesCarousel = [
     {
       img: "",
-      alt: "", 
+      alt: "",
+      link: "",
       text: {
         title: "", subtitle: "", status: ""
       }
@@ -22,6 +23,16 @@ export class HomeComponent implements OnInit {
     }
   ];
 
+  imagesSlider = [
+    {
+      img: "",
+      alt: "",
+      text: {
+        title: "", subtitle: "", status: ""
+      }
+      
+    }
+  ];
 
   sociaisMedias={
     facebook: 'https://www.facebook.com/mariamacedo.kamikorosu/',
@@ -36,7 +47,8 @@ export class HomeComponent implements OnInit {
   async ngOnInit() {
     const result = await this.dataService.getData().subscribe((data: any) =>{
       this.info = data.carisInfo;
-      this.images = data.sliderArray;
+      this.imagesCarousel = data.carouselArray;
+      this.imagesSlider = data.sliderArray;
     })
   }
   

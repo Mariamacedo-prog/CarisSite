@@ -67,6 +67,54 @@ $background-hover   :  rgb(18, 18, 18);
   z-index: 999;
 }
 
+.menuWhats{
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  z-index: 999;
+  border-radius: 10px;
+  padding: 10px;
+  display: flex;
+  cursor: pointer;
+  text-decoration: none;
+
+  a{
+    display: flex;
+    transition: all 0.4s ease;
+    text-decoration: none;
+    color: #fff;
+  }
+  div{
+    margin-right: -200px;
+    color: transparent;
+    transition: all 0.4s ease;
+  }
+  img {
+    width:50px;
+    transition: all 0.4s ease;
+  }
+}
+
+.menuWhats:hover{
+
+  div{
+
+    margin-right: 0;
+    background-color: rgb(179, 158, 143);
+    padding:10px 20px;
+    font-size: 15px;
+    color: #fff;
+    height: 40px;
+    border-radius: 10px 0  0 0;
+    display: block;
+  }
+  img {
+    border-radius: 0 10px 10px 10px;
+    width:58px;
+    background-color: rgb(179, 158, 143);
+  }
+}
+
 .menuContainer-logo{
   height: 60px;
 }

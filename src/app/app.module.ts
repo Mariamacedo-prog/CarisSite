@@ -35,7 +35,7 @@ import { ObrasComponent } from './pages/obras/obras.component';
     CarouselModule,
     MatInputModule
   ],  
-  exports: [SliderComponent, AppComponent],
+  exports: [SliderComponent, AppComponent, NavComponent, FooterComponent],
   providers: [],
   bootstrap: [AppComponent],
 })

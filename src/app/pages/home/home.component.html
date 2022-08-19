@@ -1,6 +1,6 @@
 <app-nav [activePage]="'Home'"></app-nav>
 
-<app-carousel  [images]="images" [autoSlide]="true"></app-carousel>
+<app-carousel  [images]="imagesCarousel" [autoSlide]="true"></app-carousel>
 <div class="quem-somos">
   <div class="squad-area"  style="justify-content: flex-end;">
     <div class="squad-1"></div>
@@ -68,17 +68,7 @@
 </div>
 
 <div  [class]=" showQuemSomos   ? 'aparecer ' : 'esconder'"  class="content-slider">
-  <app-slider [images]="images" ></app-slider>
+  <app-slider [images]="imagesSlider" ></app-slider>
 </div>
 
-<div class="fale-conosco-div">
-  <div [class]=" showQuemSomos ? 'aparecer fale-conosco-titulo' : 'esconder fale-conosco-titulo'" style="display: flex;align-items: center; flex-direction:column;">
-    <p  > FALE <span style="font-weight: bold;">CONOSCO</span></p>
-    <div style="height: 2px; width: 35px; background-color: rgb(122, 112, 106); margin-top: 15px;"></div>
-  </div>
-  <div>
-    <p class="fale-conosco-subtitle">Envie sua mensagem que <span style="font-weight: bold;">iremos responder em breve.</span></p>
-  </div>
-  <app-formulario  class="fale-conosco-form"></app-formulario>
-</div>
 

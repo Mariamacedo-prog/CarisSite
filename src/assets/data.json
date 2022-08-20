@@ -38,38 +38,66 @@
     }}
   ],
   "sliderArray":[
-  {"img": "../assets/images/cachoeirinha/FACHADA_CACHOEIRINHA_RF1.jpg",
-   "alt": "FACHADA CACHOEIRINHA", 
-   "text": {
-      "title": "SLIM CACHOEIRINHA", "subtitle": "FACHADA CACHOEIRINHA", "status": "FUTURO LANÇAMENTO"
-    }},
+    {"img": "../assets/images/cachoeirinha/FACHADA_CACHOEIRINHA_RF1.jpg",
+      "alt": "FACHADA CACHOEIRINHA",
+      "link": {
+        "href":"http://www.slimcachoeirinha.com.br/",
+        "blank": true
+      },
+      "text": {
+          "title": "SLIM CACHOEIRINHA", "subtitle": "FACHADA CACHOEIRINHA", "status": "LANÇAMENTO"
+        }},
     {"img": "../assets/images/lauzane/SLIM_LAUZANE_VARANDA_RF.jpg", 
     "alt": "SLIM LAUZANE", 
+    "link": {
+      "href":"http://www.slimlauzane.com.br/mobile.html",
+      "blank": true
+    },
     "text": {
       "title": "SLIM LAUZANE", "subtitle": "FACHADA LAUZANE", "status": "LANÇAMENTO"
     }},
     {"img": "../assets/images/entregue/1 Edificio PEME - São Paulo - ENTREGUE 2015.png",
-     "alt": "PEME", 
+     "alt": "PEME",
+     "link": {
+      "href":"empreendimentos",
+      "blank": false
+    },
      "text": {
       "title": "PEME", "subtitle": "", "status": "ENTREGUE 2015"
     }},
     {"img": "../assets/images/entregue/CEI Vila Sta. Catarina - São Paulo - ENTREGUE 2018.JPG", 
     "alt": "", 
+    "link": {
+      "href":"empreendimentos",
+      "blank": false
+    },
     "text": {
       "title": "CEI ", "subtitle": "Vila Sta. Catarina", "status": "ENTREGUE 2018"
     }},
     {"img": "../assets/images/entregue/Empreendimento Residencial Alamanda - Arujá - ENTREGUE 2020.jpeg", 
-    "alt": "",  
+    "alt": "",
+    "link": {
+      "href":"empreendimentos",
+      "blank": false
+    },
     "text": {
       "title": "EMPREENDIMENTO RESIDENCIAL ALAMANDA ", "subtitle": "", "status": "ENTREGUE 2020"
     }},
     {"img": "../assets/images/entregue/Estação de Abrigo Cabos Submarinos - Praia Grande - ENTREGUE 2018.JPG", 
-    "alt": "",  
+    "alt": "",
+    "link": {
+      "href":"empreendimentos",
+      "blank": false
+    },
     "text": {
       "title": "ESTAÇÃO DE ABRIGO ", "subtitle": "CABOS SUBMARINOS", "status": " ENTREGUE 2018"
     }},
     {"img": "../assets/images/entregue/Residencial Sta. Helena Mandaqui - São Paulo - ENTREGUE 2022.jpeg",
-     "alt": "",  
+     "alt": "",
+     "link": {
+      "href":"empreendimentos",
+      "blank": false
+    },
      "text": {
       "title": "RESIDENCIAL STA. HELENA MANDAQUI", "subtitle": "", "status": " ENTREGUE 2022"
     }}

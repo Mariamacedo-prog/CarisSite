@@ -35,9 +35,9 @@ export class HomeComponent implements OnInit {
   ];
 
   sociaisMedias={
-    facebook: 'https://www.facebook.com/mariamacedo.kamikorosu/',
-    instagram: 'https://www.instagram.com/maria.s.ma/',
-    twitter: 'https://www.instagram.com/maria.s.ma/'
+    facebook: '',
+    instagram: '',
+    twitter: ''
   }
   showQuemSomos = true;
   constructor(
@@ -49,6 +49,7 @@ export class HomeComponent implements OnInit {
       this.info = data.carisInfo;
       this.imagesCarousel = data.carouselArray;
       this.imagesSlider = data.sliderArray;
+      this.sociaisMedias = data.carisInfo;
     })
   }
   

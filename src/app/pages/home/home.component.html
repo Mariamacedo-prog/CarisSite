@@ -2,7 +2,7 @@
 
 <app-carousel  [images]="imagesCarousel" [autoSlide]="true"></app-carousel>
 <div class="quem-somos">
-  <div class="squad-area"  style="justify-content: flex-end;">
+  <!-- <div class="squad-area"  style="justify-content: flex-end;">
     <div class="squad-1"></div>
     <div class="squad-2"></div>
     <div style="margin-top:50px">
@@ -17,7 +17,8 @@
       <div style="display: flex; margin-top:-50px;"> <div class="squad-claro-3"></div> <div class="squad-claro-5"></div></div>
       <div class="squad-claro-4"></div>
     </div>
-  </div>
+  </div> -->
+  <img class="squad-area"  src='../../../assets/simbolo.svg' style="width: 300px;"/>
 
   <div  class="content-quem-somos">
     <div [class]=" showQuemSomos ? 'aparecer quem-somos-titulo' : 'esconder quem-somos-titulo'" style="display: flex;align-items: center; flex-direction:column;">
@@ -28,10 +29,10 @@
     <p [class]=" showQuemSomos? 'aparecer quem-somos-subtitulo' : 'esconder quem-somos-subtitulo'">{{info.subtitulo}}</p>
     <p [class]=" showQuemSomos ? 'aparecer quem-somos-texto' : 'esconder quem-somos-texto'" >{{info.texto}}</p>
     <div></div>
-
+<!-- 
     <iframe [class]=" showQuemSomos   ? 'aparecer ' : 'esconder'" style="margin-top: 20px;" width="70%" height="40%"
     src="../../../assets/CarisVideo.mp4">
-    </iframe>
+    </iframe> -->
     <div [class]=" showQuemSomos   ? 'aparecer ' : 'esconder'" class="social-media">
       <i style="margin-right: 20px;">NOSSAS REDES SOCIAIS </i> 
  
@@ -48,7 +49,8 @@
 
   </div>
 
-  <div class="squad-area">
+  <img class="squad-area" src='../../../assets/simbolo.svg' style="width: 300px; "/>
+  <!-- <div class="squad-area">
     <div class="squad-1"></div>
     <div class="squad-2"></div>
     <div style="margin-top:50px">
@@ -63,7 +65,7 @@
       <div style="display: flex; margin-top:-50px;"> <div class="squad-claro-3"></div> <div class="squad-claro-5"></div></div>
       <div class="squad-claro-4"></div>
     </div>
-  </div>
+  </div> -->
 
 </div>
 

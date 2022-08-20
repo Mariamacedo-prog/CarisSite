@@ -2,19 +2,19 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import {ObrasRoutingModule} from './obras-routing.module';
 import { ObrasComponent } from "./obras.component";
-import {NavComponent} from '../../components/nav/nav.component'
-import {AppModule} from '../../app.module';
-import {AppRoutingModule} from '../../app-routing.module'
+import { NavModule } from 'src/app/components/nav/nav.module';
+import { RouterModule } from '@angular/router';
 @NgModule({
   declarations: [
     ObrasComponent
   ],
   imports: [
     CommonModule,
+    RouterModule,
     ObrasRoutingModule,
-    AppRoutingModule,
-    AppModule
+    NavModule
   ],
-  exports: []
+
+  exports: [ObrasComponent]
 })
 export class ObrasModule { }

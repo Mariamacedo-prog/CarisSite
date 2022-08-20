@@ -1,4 +1,4 @@
-import { NgModule, Injector } from '@angular/core';
+import { NgModule, Injector, NO_ERRORS_SCHEMA, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import {MatToolbarModule} from '@angular/material/toolbar';
 import { AppRoutingModule } from './app-routing.module';
@@ -15,11 +15,12 @@ import { FormularioComponent } from './components/formulario/formulario.componen
 import {MatInputModule} from '@angular/material/input';
 import { SobreNosComponent } from './pages/sobre-nos/sobre-nos.component';
 import {ObrasModule} from './pages/obras/obras.module';
-import {ObrasRoutingModule} from './pages/obras/obras-routing.module';
+import { ObrasComponent } from "./pages/obras/obras.component";
+import { RouterModule } from '@angular/router';
+import { NavModule } from './components/nav/nav.module';
 @NgModule({
   declarations: [
     AppComponent,
-    NavComponent,
     SliderComponent,
     HomeComponent,
     FooterComponent,
@@ -34,15 +35,18 @@ import {ObrasRoutingModule} from './pages/obras/obras-routing.module';
     MatToolbarModule,
     HttpClientModule,
     CarouselModule,
-    MatInputModule
+    MatInputModule,
+    RouterModule,
+    ObrasModule,
+    NavModule
   ],  
   exports: [ AppComponent,
-    NavComponent,
     SliderComponent,
     HomeComponent,
     FooterComponent,
     FormularioComponent,
-    SobreNosComponent],
+    SobreNosComponent
+  ],
   providers: [],
   bootstrap: [AppComponent],
 })

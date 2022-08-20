@@ -1,6 +1,6 @@
 <app-nav [activePage]="'Sobre Nós'"></app-nav>
 
-<div class="content-page">
+<div *ngIf="info.texto" class="content-page">
   <div style="height: calc(100vh -  60px);">
     <div class="content-quem-somos">
       <div></div>
@@ -41,7 +41,7 @@
       <p  class="txt-conteudo">{{info.txt3.conteudo}}</p>
     </div>
   </div>
-  <iframe class="video-iframe" style="margin-top: 20px;" width="70%" height="40%" src="../../../assets/CarisVideo.mp4"></iframe>
+  <!-- <iframe class="video-iframe" style="margin-top: 20px;" width="70%" height="40%" src="../../../assets/CarisVideo.mp4"></iframe> -->
  </div>
 
  <div  class="content-nossa-cede">

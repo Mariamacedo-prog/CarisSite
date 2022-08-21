@@ -1,3 +1,37 @@
 <app-nav [activePage]="'Empreendimentos'"></app-nav>
+<div class="content">
+  <div class="obras--background--shadow"></div>
+  <div class="obras--background" >
+    <div class="obras--image">
+      <img [src]="imageBackground.src" [alt]="imageBackground.alt" />
+    </div>
+    <span class="obras--titulo"> <p>NOSSOS </p><p class="obras--subtitulo">EMPREENDIMENTOS</p></span>
 
-<p style="height: 100vh;">obras works!</p>
+  </div>
+
+  <div class="row-obras" >
+    <p class="row--obras--title">CONHEÇA NOSSOS EMPREENDIMENTOS</p>
+    <div class="row--obras--buttons">
+      <button class="{{activeOption !== 'TODOS'? 'button-item' :'button-item-active' }}"  (click)="filterSlider('TODOS')">TODOS</button>
+      <button class="{{activeOption !== 'LANCAMENTO'? 'button-item' :'button-item-active' }}" (click)="filterSlider('LANCAMENTO')">LANÇAMENTOS</button>
+      <button class="{{activeOption !== 'CONSTRUCAO'? 'button-item' :'button-item-active' }}" (click)="filterSlider('CONSTRUCAO')">EM CONSTRUÇÃO</button>
+      <button class="{{activeOption !== 'ENTREGUE'? 'button-item' :'button-item-active' }}" (click)="filterSlider('ENTREGUE')">ENTREGUES</button>
+    </div>
+    <div class="row--obras--list"  *ngIf="imagesSlider.length > 0" >
+      <app-obra-card *ngFor="let item of imagesSlider" [image]="item"></app-obra-card>
+    </div>
+    <div class="row--obras--list"  *ngIf="imagesSlider.length === 0" >
+      <p class="message--error" style="color: #fff">NÃO FOI LOCALIZADO NENHUM EMPREENDIMENTO</p>
+    </div>
+  </div>
+  <div class="row-entregues" >
+    <p class="row-entregues-title" >EMPREENDIMENTOS <span style="font-weight: bold;">ENTREGUES</span></p>
+    <div class="row--obras--list" *ngIf="imagesEntregue.length > 0" >
+      <app-obra-card *ngFor="let item of imagesEntregue" [image]="item"></app-obra-card>
+    </div>
+    <div class="row--obras--list"  *ngIf="imagesEntregue.length === 0" >
+      <p class="message--error" style="color: #000">NÃO FOI LOCALIZADO NENHUM EMPREENDIMENTO</p>
+    </div>
+  </div>
+</div>
+

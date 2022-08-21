@@ -53,3 +53,13 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
   background-color:  rgb(166, 154, 146);
   cursor: pointer;
 }
+
+
+@keyframes fade {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

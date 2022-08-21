@@ -4,6 +4,7 @@ import {ObrasRoutingModule} from './obras-routing.module';
 import { ObrasComponent } from "./obras.component";
 import { NavModule } from 'src/app/components/nav/nav.module';
 import { RouterModule } from '@angular/router';
+import { ObraCardModule } from 'src/app/components/obra-card/obra-card.module';
 @NgModule({
   declarations: [
     ObrasComponent
@@ -12,7 +13,8 @@ import { RouterModule } from '@angular/router';
     CommonModule,
     RouterModule,
     ObrasRoutingModule,
-    NavModule
+    NavModule,
+    ObraCardModule
   ],
 
   exports: [ObrasComponent]

@@ -1,0 +1,113 @@
+$background   : rgb(35, 35, 35);
+$background-hover   :  rgb(18, 18, 18);
+.content{
+  background-color: $background;
+  animation-name: fade;
+  animation-duration: 0.5s;
+}
+
+.row-obras, .row-entregues{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content:center;
+}
+.message--error{
+  font-size:19px; text-align:center; width:100%; padding: 80px 10px;
+}
+.row-entregues{
+  background-color:#fff
+}
+
+
+.row-entregues-title{
+
+  color:  rgb(179, 158, 143);
+  font-size:45px;
+  margin:  50px 0 0 0;
+  transition: all 0.5s ease;
+}
+
+
+
+.obras--image{
+  height: 100vh;
+  img{
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+  }
+}
+
+.obras--background--shadow{
+  position: absolute;
+  margin-top: 60px;
+  width: 100%;
+  height: calc(100vh - 60px);
+  background-color:rgba(0,0,0,0.5)
+}
+
+.obras--subtitulo{
+  font-size: 60px;
+  font-weight: bold;
+}
+
+.obras--titulo{
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 50px;
+  position: absolute;
+  top: 40%;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+  p{
+    animation-name: fade;
+    animation-duration: 2s;
+  }
+}
+
+.obras--background {
+  color: #fff;
+}
+
+
+.row--obras--title{
+  color: #ccc;
+  font-size: 25px;
+  margin: 50px 0;
+}
+
+.row--obras--list{
+  width: 80%
+}
+
+.row--obras--buttons{
+  display: flex;
+  width: 80%;
+}
+
+.button-item{
+  border: none;
+  width: 100%;
+  height: 50px;
+  background-color:  rgb(166, 154, 146);
+  color: #fff;
+  margin: 0 5px;
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+
+.button-item-active{
+  font-size: 25px;
+  border: none;
+  width: 100%;
+  height: 50px;
+  background-color: rgb(86, 85, 85);
+  color: #fff;
+  margin: 0 20px;
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+
+

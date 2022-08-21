@@ -1,0 +1,144 @@
+.content{
+ padding-top: 100px; width: 320px; display: inline-block; margin: 0 30px;
+}
+
+.content--image{
+  position: relative;
+  max-width: 300px;
+  height: 460px;  
+  overflow: hidden;
+  border: 1px solid #aaa;
+
+  img{
+    width: 200px; 
+    height: 400px;   
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    height: 100%;
+    width: auto;
+    -webkit-transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+    filter: saturate(150%);
+    transition: all 1s ease;
+  }
+}
+
+.content--image:hover{
+ 
+  img{
+    left: 20%;
+    filter: brightness(60%);
+  }
+}
+
+.content--div{
+ 
+}
+
+.content--div:hover{
+  p{
+    margin-top: -430px;
+  }
+}
+
+.image--name{
+  max-width: 300px;
+  word-wrap: break-word;
+  font-size: 18px;  
+  font-weight: bold; 
+  color: #fff; 
+  margin-top: -90px;
+
+  margin-bottom: 10px;
+  position: absolute;
+  margin-left: 10px;
+  transition: all 0.5s ease;
+}
+
+.content--status{
+  color: rgb(0, 177, 0); 
+  font-weight: bold; 
+  margin-top: 10px;
+}
+
+.content--text{
+  font-size: 13px; color: #ccc; 
+}
+
+.content--button{
+  cursor: pointer; 
+  margin: 10px 0 ;
+  background-color: rgb(161, 149,142); 
+  color: #fff; 
+  font-size: 15px; 
+  font-weight: bold;
+  padding: 3px 10px; 
+  border: none;
+  transition: all 0.5s ease;
+}
+
+.content--button:hover{
+  background-color: rgb(136, 123, 116); 
+}
+
+
+@media (max-width: 740px) {
+  .content{
+    padding-top: 100px; width: 320px; display: inline-block; margin: 0 30px;
+   }
+   
+   .content--image{
+     position: relative;
+     max-width: 300px;
+     height: 460px;  
+     overflow: hidden;
+     border: 1px solid #aaa;
+   
+     img{
+       width: 200px; 
+       height: 400px;   
+       position: absolute;
+       left: 50%;
+       top: 50%;
+       height: 100%;
+       width: auto;
+       -webkit-transform: translate(-50%,-50%);
+       -ms-transform: translate(-50%,-50%);
+       transform: translate(-50%,-50%);  
+     }
+   }
+   
+   .image--name{
+     font-size: 18px;  
+     font-weight: bold; 
+     color: #fff; 
+     margin-top: -30px;
+     margin-bottom: 10px;
+     position: absolute;
+     margin-left: 10px;
+   }
+   
+   .content--status{
+     color: rgb(0, 177, 0); 
+     font-weight: bold; 
+     margin-top: 10px;
+   }
+   
+   .content--text{
+     font-size: 13px; color: #ccc; 
+   }
+   
+   .content--button{
+     cursor: pointer; 
+     margin: 10px 0 ;
+     background-color: rgb(161, 149,142); 
+     color: #fff; 
+     font-size: 15px; 
+     font-weight: bold;
+     padding: 3px 10px; 
+     border: none;
+   }
+   
+}

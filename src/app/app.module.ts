@@ -18,6 +18,7 @@ import {ObrasModule} from './pages/obras/obras.module';
 import { ObrasComponent } from "./pages/obras/obras.component";
 import { RouterModule } from '@angular/router';
 import { NavModule } from './components/nav/nav.module';
+import { ObraCardComponent } from './components/obra-card/obra-card.component';
 @NgModule({
   declarations: [
     AppComponent,

@@ -19,16 +19,12 @@ $background-hover   :  rgb(18, 18, 18);
   background-color:#fff
 }
 
-
 .row-entregues-title{
-
   color:  rgb(179, 158, 143);
   font-size:45px;
   margin:  50px 0 0 0;
   transition: all 0.5s ease;
 }
-
-
 
 .obras--image{
   height: 100vh;
@@ -79,7 +75,8 @@ $background-hover   :  rgb(18, 18, 18);
 }
 
 .row--obras--list{
-  width: 80%
+  width: 80%;
+  
 }
 
 .row--obras--buttons{
@@ -111,3 +108,59 @@ $background-hover   :  rgb(18, 18, 18);
 }
 
 
+@media (max-width: 1200px) {
+  .button-item{
+    font-size: 11px;
+  }
+  .button-item-active{
+    font-size: 11px;
+  }
+}
+
+@media (max-width: 970px) {
+  .row--obras--list{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media (max-width: 700px) {
+  .button-item{
+    width: 100%;
+    height: 30px;
+    color: #fff;
+    margin: 0;
+    font-size: 8px;
+    font-weight: bold;
+  }
+  .button-item-active{
+    font-size: 10px;
+    font-weight: bold;
+    margin: 0 10px;
+    padding: 0;
+  }
+  .row--obras--buttons{
+    width: 100%;
+  }
+  .obras--subtitulo{
+    font-size: 30px;
+  }
+  .obras--titulo{
+    font-size: 20px;
+  }
+
+  .message--error{
+    font-size:15px; 
+  }
+  .row-entregues-title{
+    font-size:20px;
+    margin:  20px 0 0 0;
+
+  }
+  .row--obras--title{
+    font-size: 17px;
+    margin: 20px 0;
+  }
+}

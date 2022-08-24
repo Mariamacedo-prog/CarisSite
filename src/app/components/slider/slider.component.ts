@@ -25,6 +25,8 @@ export class SliderComponent implements OnInit {
     }
   };
 
+
+
   seeItem(item: number){
     this.seeItemvalue = item
   }
@@ -36,7 +38,16 @@ export class SliderComponent implements OnInit {
       this.itemAtual = this.images.length - 1;
     }
   };
-
+  logTouchstart(event:any){
+    for (let i = 0; i < event.changedTouches.length; i++) {
+      if(event.changedTouches[i].clientX < 100){
+        this.handleLeftArrow ()
+      }
+      if(event.changedTouches[i].clientX > 271){
+        this.handleRightArrow ()
+      }
+    }
+  }
 
   constructor() { }
 

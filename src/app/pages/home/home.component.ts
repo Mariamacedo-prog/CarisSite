@@ -27,6 +27,11 @@ export class HomeComponent implements OnInit {
     {
       img: "",
       alt: "",
+      link: {
+        href: "",
+        blanc: false
+
+      },
       text: {
         title: "", subtitle: "", status: ""
       }

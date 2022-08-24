@@ -1,0 +1,65 @@
+$background   : rgb(28,28,28);
+.content{
+  background-color: $background;
+  height: calc(70vh - 60px);
+}
+
+.contato--background--shadow{
+  z-index: 1;
+  position: absolute;
+  margin-top: 60px;
+  width: 100%;
+  height: calc(50vh - 60px);
+  background-color:rgba(0,0,0,0.5)
+}
+
+.contato--background {
+  color: #fff;
+}
+
+.contato--image{
+  img{
+    width: 100%;
+    height: 50vh;
+    object-fit: cover;
+  }
+}
+
+
+.btn-fale-conosco{
+  z-index:3;
+  border-radius: 10px;
+  padding: 10px 30px;
+  margin-top: 80px;
+  font-size: 25px;
+  border: none;
+  background-color: rgb(166, 154, 146);
+  cursor: pointer;
+ 
+  transition: all 0.4s ease;
+  text-decoration: none;
+  color: #fff;
+}
+
+.btn-fale-conosco:hover{
+  background-color: rgb(179, 158, 143);
+}
+
+.div-fale-conosco{
+  display: flex;
+  margin-top: -110px;
+  align-items: center;
+  justify-content:center;
+  width: 100%;
+}
+
+.portal-cliente-titulo{
+  color: #fff;display: flex;align-items: center; flex-direction:column; font-size: 40px; padding-top:100px;
+}
+
+@media (max-width: 700px) {
+  .portal-cliente-titulo{
+    font-size: 22px;
+  }
+  
+}

@@ -19,6 +19,7 @@ import { ObrasComponent } from "./pages/obras/obras.component";
 import { RouterModule } from '@angular/router';
 import { NavModule } from './components/nav/nav.module';
 import { ObraCardComponent } from './components/obra-card/obra-card.component';
+import { ContatoComponent } from './pages/contato/contato.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -26,7 +27,8 @@ import { ObraCardComponent } from './components/obra-card/obra-card.component';
     HomeComponent,
     FooterComponent,
     FormularioComponent,
-    SobreNosComponent
+    SobreNosComponent,
+    ContatoComponent
   ],
   imports: [
     BrowserModule,

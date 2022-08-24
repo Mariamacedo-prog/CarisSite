@@ -6,18 +6,24 @@
    "text": {
       "title": "SLIM CACHOEIRINHA", "subtitle": "FACHADA CACHOEIRINHA", "status": "LANÇAMENTO"
     }},
+
+
     {"img": "../assets/images/lauzane/SLIM_LAUZANE_VARANDA_RF.jpg", 
     "alt": "SLIM LAUZANE", 
     "link": "http://www.slimlauzane.com.br/mobile.html",
     "text": {
       "title": "SLIM LAUZANE", "subtitle": "FACHADA LAUZANE", "status": "LANÇAMENTO"
     }},
+
+
     {"img": "../assets/images/lauzane/SLIM_LAUZANE_FESTAS_RF.jpg", 
     "alt": "SLIM LAUZANE", 
     "link": "http://www.slimlauzane.com.br/mobile.html",
     "text": {
       "title": "SLIM LAUZANE", "subtitle": "FACHADA LAUZANE", "status": "LANÇAMENTO"
     }},
+
+
     {"img": "../assets/images/lauzane/SLIM_LAUZANE_SUITE_RF.jpg", 
     "alt": "SLIM LAUZANE", 
     "link": "http://www.slimlauzane.com.br/mobile.html",
@@ -50,6 +56,8 @@
       "text": {
           "title": "SLIM CACHOEIRINHA", "subtitle": "FACHADA CACHOEIRINHA", "status": "LANÇAMENTO"
         }},
+
+
     {"img": "../assets/images/lauzane/SLIM_LAUZANE_VARANDA_RF.jpg", 
     "alt": "SLIM LAUZANE", 
     "statusEnum": "LANCAMENTO",
@@ -61,17 +69,21 @@
     "text": {
       "title": "SLIM LAUZANE", "subtitle": "FACHADA LAUZANE", "status": "LANÇAMENTO"
     }},
+
+
     {"img": "../assets/images/entregue/1 Edificio PEME - São Paulo - ENTREGUE 2015.png",
      "alt": "PEME",
      "statusEnum": "ENTREGUE",
      "description": "Empregamos mão de obra qualificada e novas tecnologias nos processos construtivos, executando em cada etapa responsabilidade técnica e sustentável, repassando confiabilidade",
      "link": {
-      "href":"empreendimentos",
-      "blank": false
-    },
+        "href":"empreendimentos",
+        "blank": false
+      },
      "text": {
       "title": "PEME", "subtitle": "", "status": "ENTREGUE 2015"
     }},
+
+
     {"img": "../assets/images/entregue/CEI Vila Sta. Catarina - São Paulo - ENTREGUE 2018.JPG", 
     "alt": "", 
     "statusEnum": "ENTREGUE",
@@ -83,6 +95,8 @@
     "text": {
       "title": "CEI ", "subtitle": "Vila Sta. Catarina", "status": "ENTREGUE 2018"
     }},
+
+    
     {"img": "../assets/images/entregue/Empreendimento Residencial Alamanda - Arujá - ENTREGUE 2020.jpeg", 
     "alt": "",
     "statusEnum": "ENTREGUE",
@@ -94,6 +108,8 @@
     "text": {
       "title": " RESIDENCIAL ALAMANDA ", "subtitle": "", "status": "ENTREGUE 2020"
     }},
+
+
     {"img": "../assets/images/entregue/Estação de Abrigo Cabos Submarinos - Praia Grande - ENTREGUE 2018.JPG", 
     "alt": "",
     "statusEnum": "ENTREGUE",
@@ -105,6 +121,8 @@
     "text": {
       "title": "ESTAÇÃO DE ABRIGO ", "subtitle": "CABOS SUBMARINOS", "status": " ENTREGUE 2018"
     }},
+
+
     {"img": "../assets/images/entregue/Residencial Sta. Helena Mandaqui - São Paulo - ENTREGUE 2022.jpeg",
      "alt": "",
      "statusEnum": "ENTREGUE",
@@ -116,8 +134,11 @@
      "text": {
       "title": "RESIDENCIAL STA. HELENA MANDAQUI", "subtitle": "", "status": " ENTREGUE 2022"
     }}
+
+    
   ],
   "carisInfo": {
+    "whats": "https://api.whatsapp.com/send?L=pt&phone=1129723488",
     "rua": "Av. Eng. Caetano Álvares",
     "numero": " 6685 ",
     "bairro": "Vila Aurora (Zona Norte)",
@@ -158,5 +179,11 @@
       "src": "../assets/images/cachoeirinha/FACHADA_CACHOEIRINHA_RF1.jpg",
       "alt": "imaguem dos empreendimentos"
       }
-    }
+    },
+  "contato":{
+    "imgBackground": {
+      "src": "../assets/images/maos.png",
+      "alt": "Aperto de mãos"
+      }
+  }
 }

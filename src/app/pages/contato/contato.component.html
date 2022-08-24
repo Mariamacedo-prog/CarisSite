@@ -1,0 +1,23 @@
+<app-nav [activePage]="'Contato'"></app-nav>
+
+
+
+<div class="content">
+  <div class="contato--background--shadow">  
+    <div class="portal-cliente-titulo" >
+      <p  >PORTAL DO <strong>CLIENTE</strong></p>
+      <div style="height: 2px; width: 35px; background-color: #fff; margin-top: 15px;"></div>
+    </div>
+  </div>
+  <div class="contato--background" >
+    <div class="contato--image">
+      <img [src]="infoContato.imgBackground.src" [alt]="infoContato.imgBackground.alt" />
+    </div>
+    
+  </div>
+
+  <div class="div-fale-conosco">
+    <a [href]="infoContato.whats" target="_blank" class="btn-fale-conosco"> FALE CONOSCO </a>
+  </div>
+
+</div>

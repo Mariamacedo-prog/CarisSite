@@ -19,7 +19,7 @@ export class CarouselComponent implements OnInit {
   @Input() controls = true;
   @Input() textCenter = true;
   @Input() autoSlide = false;
-  @Input() setIntervalTime = 3000;
+  @Input() setIntervalTime = 5000;
 
 
   selectedIndex = 0;

@@ -69,14 +69,16 @@
 
 .content--button{
   cursor: pointer; 
-  margin: 10px 0 ;
+  margin: 20px 0 ;
   background-color: rgb(161, 149,142); 
   color: #fff; 
   font-size: 15px; 
   font-weight: bold;
   padding: 3px 10px; 
   border: none;
+  text-decoration: none;
   transition: all 0.5s ease;
+  width: 120px
 }
 
 .content--button:hover{

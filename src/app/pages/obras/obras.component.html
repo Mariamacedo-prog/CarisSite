@@ -24,7 +24,7 @@
       <p class="message--error" style="color: #fff">NÃO FOI LOCALIZADO NENHUM EMPREENDIMENTO</p>
     </div>
   </div>
-  <div class="row-entregues" >
+  <div class="row-entregues" style="margin-bottom: 50px;" >
     <p class="row-entregues-title" >EMPREENDIMENTOS <span style="font-weight: bold;">ENTREGUES</span></p>
     <div class="row--obras--list" *ngIf="imagesEntregue.length > 0" >
       <app-obra-card *ngFor="let item of imagesEntregue" [image]="item"></app-obra-card>

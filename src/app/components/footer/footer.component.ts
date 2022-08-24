@@ -11,6 +11,7 @@ export class FooterComponent implements OnInit {
     rua: "",
     numero: "",
     complemento: "",
+    bairro: "",
     cidade: "",
     estado: "",
     cep: "",

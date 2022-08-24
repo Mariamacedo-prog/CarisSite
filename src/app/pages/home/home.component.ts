@@ -45,6 +45,7 @@ export class HomeComponent implements OnInit {
   ) { }
 
   async ngOnInit() {
+    document.documentElement.scrollTop = -2000;
     const result = await this.dataService.getData().subscribe((data: any) =>{
       this.info = data.carisInfo;
       this.imagesCarousel = data.carouselArray;

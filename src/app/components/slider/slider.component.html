@@ -7,7 +7,9 @@
         <img  class="testeImagemApagadaEsquerda" (click)="handleLeftArrow ()" *ngIf="itemAtual !== 0" [src]="images[itemAtual - 1].img" [alt]="images[itemAtual - 1].alt" >
         <div >
           <p class="info--title--caris" > <span> <span style=" color:  rgb(166, 154, 146);"> ▶ </span> <b> EMPREENDIMENTOS</b>  CARIS  </span> <a class="btn-more" >VER TODOS | <span style="font-size: 9px;margin-left:8px;">▼</span></a></p>
-          <a  [href]="images[itemAtual].link.href" [target]=" images[itemAtual].link.blank ? '_blank': ''">  <img class="testeimagem" [src]="images[itemAtual].img" [alt]="images[itemAtual].alt" ></a>
+          <a *ngIf="images[itemAtual].link.blank" [href]="images[itemAtual].link.href" [target]=" images[itemAtual].link.blank ? '_blank': ''">  <img class="testeimagem" [src]="images[itemAtual].img" [alt]="images[itemAtual].alt" ></a>
+          
+          <a *ngIf="!images[itemAtual].link.blank"  [routerLink]="images[itemAtual].link.href" >  <img class="testeimagem" [src]="images[itemAtual].img" [alt]="images[itemAtual].alt" ></a>
           <div class="testeButton" >
             <p class="movieRow--item--title title-active"> <b>{{images[itemAtual].text.title}}</b> | {{images[itemAtual].text.status}} </p>
             <div class="buttons">

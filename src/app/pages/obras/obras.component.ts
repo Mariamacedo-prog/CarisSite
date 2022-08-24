@@ -13,6 +13,7 @@ export class ObrasComponent implements OnInit {
   activeOption = "TODOS";
   constructor( private dataService: DataService) { }
   async ngOnInit() {
+    document.documentElement.scrollTop = -2000;
     const result = await this.dataService.getData().subscribe((data: any) =>{
       this.imagesSlider = data.sliderArray;
       this.imageBackground = data.empreendimentos.imgBackground;

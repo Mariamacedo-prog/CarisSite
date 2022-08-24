@@ -118,25 +118,27 @@
     }}
   ],
   "carisInfo": {
-    "rua": "Av. ezequias bezerra de farias",
-    "numero": "85",
-    "complemento": "Bl 25 ap 4",
-    "cidade": "Ferraz de Vasconcelos",
+    "rua": "Av. Eng. Caetano Álvares",
+    "numero": " 6685 ",
+    "bairro": "Vila Aurora (Zona Norte)",
+    "complemento": "",
+    "cidade": " São Paulo",
     "estado": "SP",
-    "cep": "03399-199",
+    "cep": " 02413-200",
     "telefone":"(11) 2972-3488",
     "email": "contato@caris-incorporadora.com.br",
-    "facebook": "https://www.facebook.com",
+    "facebook": "",
     "instagram": "https://instagram.com/caris_construtora?r=nametag",
-    "twitter": "https://api.whatsapp.com",
+    "twitter": "",
     "subtitulo": "A CARIS Incorporadora nasceu de um grupo de sócios engenheiros.",
     "texto":"Empregamos mão de obra qualificada e novas tecnologias nos processos construtivos, executando em cada etapa responsabilidade técnica e sustentável, repassando confiabilidade em cada empreendimento entregue. A CARIS proporciona excelência no atendimento e eficiência na construção de cada produto realizado, todos entregues rigorosamente dentro dos prazos acordados."
   },
   "sobreNos":{
     "subtitulo": "A CARIS Incorporadora nasceu de um grupo de sócios engenheiros com vasta expertise no mercado imobiliário e construção civil.",
     "texto": "Empregamos mão de obra qualificada e novas tecnologias nos processos construtivos, executando em cada etapa responsabilidade técnica e sustentável, repassando confiabilidade em cada empreendimento entregue. A CARIS proporciona excelência no atendimento e eficiência na construção de cada produto realizado, todos entregues rigorosamente dentro dos prazos acordados.",
-    "fraseSocio": "''Lorem Ipsum is simply dummy text of the printing and typesetting industry...''",
-    "autor": "- André Lima - Socio",
+    "fraseSocio": "''Vida nova, novo lar!''",
+    "nossaCedeImg":"../assets/images/Av. Eng. Caetano Álvares, 6685.png",
+    "autor": "",
     "txt1":{
       "titulo": "MISSÃO",
       "conteudo":"Tornar o cliente um parceiro, por meio de um relacionamento sólido e contínuo, oferecendo as melhores soluções de engenharia e construções de qualidade superior."
@@ -149,9 +151,8 @@
       "titulo": "VALORES",
       "conteudo":"Integridade, Transparência e Ética Profissional, Melhoria Contínua dos Processos, Comprometimento, Crescimento Sustentável, Respeito ao Próximo."
     },
-    "conteudoAgenda": "Lorem Ipsum is simply dummy text of the printing and. Lorem Ipsum is simply dummy text of the print, lorem Ipsum is simply dummy text of the printing and. Lorem Ipsum is simply dummy text of the print",
-    "endereco":"Av. ezequias bezerra de farias, N 85, Bl 25 ap 4, das 8:00 as 18:00."
-  },
+    "conteudoAgenda": ""
+   },
   "empreendimentos":{
     "imgBackground": {
       "src": "../assets/images/cachoeirinha/FACHADA_CACHOEIRINHA_RF1.jpg",

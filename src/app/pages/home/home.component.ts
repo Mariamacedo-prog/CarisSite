@@ -10,6 +10,12 @@ export class HomeComponent implements OnInit {
     subtitulo: "",
     texto: ""
   }
+  imageBase64 = {
+    facebook: "",
+    instagram: "",
+    twitter: "",
+    arrowRight: ""
+  }
 
   imagesCarousel = [
     {
@@ -56,6 +62,7 @@ export class HomeComponent implements OnInit {
       this.imagesCarousel = data.carouselArray;
       this.imagesSlider = data.sliderArray;
       this.sociaisMedias = data.carisInfo;
+      this.imageBase64 = data.imageBase64;
     })
   }
   

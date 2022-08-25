@@ -112,7 +112,9 @@ Como foi feito a area de rolagem dos filmes: listArea, liste e item;
   justify-content: space-between;
 }
 
-
+.arrowImage{
+  margin-bottom: -5px;width:35px;height:35px;
+}
 
 
 @media (max-width: 1323px) {
@@ -134,6 +136,9 @@ Como foi feito a area de rolagem dos filmes: listArea, liste e item;
     left: 0;
   }
 
+  .arrowImage{
+    width:30px;height:30px;
+  }
   .imagemApagadaDireita{
    width:200px;
    height: 200px;
@@ -143,6 +148,9 @@ Como foi feito a area de rolagem dos filmes: listArea, liste e item;
 
 @media (max-width: 1123px) {
   
+  .arrowImage{
+    width:20px;height:20px;
+  }
   .testeImagemApagadaEsquerda{
     display: none;
   }

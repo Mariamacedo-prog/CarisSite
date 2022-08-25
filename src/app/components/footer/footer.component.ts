@@ -6,7 +6,7 @@ import { DataService } from '../../data.service';
   styleUrls: ['./footer.component.scss']
 })
 export class FooterComponent implements OnInit {
-
+  arrowUpBase = "";
   carisInfo = {
     rua: "",
     numero: "",
@@ -26,6 +26,8 @@ export class FooterComponent implements OnInit {
   async ngOnInit() {
     const result = await this.dataService.getData().subscribe((data: any) =>{
       this.carisInfo = data.carisInfo;
+      this.arrowUpBase = data.imageBase64.arrowUp;
+      console.log(data.imageBase64)
   })
 
   }

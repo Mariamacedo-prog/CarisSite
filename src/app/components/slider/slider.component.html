@@ -6,7 +6,7 @@
       <div class="testeimagemPrincipal" >
         <img  class="testeImagemApagadaEsquerda" (click)="handleLeftArrow ()" *ngIf="itemAtual !== 0" [src]="images[itemAtual - 1].img" [alt]="images[itemAtual - 1].alt" >
         <div  >
-          <p class="info--title--caris" > <span> <span style=" color:  rgb(166, 154, 146);"> ▶ </span> <b> EMPREENDIMENTOS</b>  CARIS  </span> <a class="btn-more" style="z-index: 1; text-decoration: none;" routerLink="/empreendimentos">VER TODOS | <span style="font-size: 9px;margin-left:8px;">▼</span></a></p>
+          <p class="info--title--caris" > <span> <span style=" color:  rgb(166, 154, 146);"> <img [src]="arrowRight" class="arrowImage"> </span> <b> EMPREENDIMENTOS</b>  CARIS  </span> <a class="btn-more" style="z-index: 1; text-decoration: none;" routerLink="/empreendimentos">VER TODOS | <span style="font-size: 9px;margin-left:8px;">▼</span></a></p>
           <a (touchstart)="logTouchstart($event)" [href]="images[itemAtual].link.href" [target]=" images[itemAtual].link.blank? '_blank': ''">  <img class="testeimagem" [src]="images[itemAtual].img" [alt]="images[itemAtual].alt" > </a>
 
           <div class="testeButton" >

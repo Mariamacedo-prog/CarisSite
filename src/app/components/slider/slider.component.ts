@@ -12,6 +12,8 @@ export class SliderComponent implements OnInit {
   @Input() controls = true;
   @Input() heightSlider: number = 400;
   @Input() mouseInImage = false;
+  @Input() arrowRight = "";
+  
   itemAtual = 0;
   seeItemvalue = 0;
   scrollX = 0;

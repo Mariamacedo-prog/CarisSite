@@ -8,7 +8,8 @@ import { DataService } from '../../data.service';
 export class HomeComponent implements OnInit {
   info={
     subtitulo: "",
-    texto: ""
+    texto: "",
+    simboloLogo: ""
   }
   imageBase64 = {
     facebook: "",

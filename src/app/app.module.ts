@@ -20,12 +20,12 @@ import { RouterModule } from '@angular/router';
 import { NavModule } from './components/nav/nav.module';
 import { ObraCardComponent } from './components/obra-card/obra-card.component';
 import { ContatoComponent } from './pages/contato/contato.component';
+import { FooterModule } from './components/footer/footer.module';
 @NgModule({
   declarations: [
     AppComponent,
     SliderComponent,
     HomeComponent,
-    FooterComponent,
     FormularioComponent,
     SobreNosComponent,
     ContatoComponent
@@ -41,12 +41,12 @@ import { ContatoComponent } from './pages/contato/contato.component';
     MatInputModule,
     RouterModule,
     ObrasModule,
-    NavModule
+    NavModule,
+    FooterModule
   ],  
   exports: [ AppComponent,
     SliderComponent,
     HomeComponent,
-    FooterComponent,
     FormularioComponent,
     SobreNosComponent
   ],

@@ -19,7 +19,10 @@ export class FooterComponent implements OnInit {
     email: "",
     facebook: "",
     instagram: "",
-    twitter: ""
+    twitter: "",
+    logo: "",
+    simoboloLogo:"",
+    whatsLogo:""
   }
   constructor(private dataService: DataService) { }
 
@@ -27,7 +30,6 @@ export class FooterComponent implements OnInit {
     const result = await this.dataService.getData().subscribe((data: any) =>{
       this.carisInfo = data.carisInfo;
       this.arrowUpBase = data.imageBase64.arrowUp;
-      console.log(data.imageBase64)
   })
 
   }

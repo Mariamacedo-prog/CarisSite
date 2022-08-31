@@ -14,3 +14,13 @@ export const environment = {
  * on performance if an error is thrown.
  */
 // import 'zone.js/plugins/zone-error';  // Included with Angular CLI.
+
+
+
+/*(Build na pasta dist dentro da aplicaçao e gera arquivos maps para teste)
+-> ng build --prod --base-href /convocacao/ --sourcemaps
+*/
+
+/*(Buil em uma pasta especifica)
+-> ng build --prod --base-href /convocacao/ --output-path="D:\Trabalhos\SistemaTec\Seduc\Code\sys-convocacao\Deploy\Front"
+*/

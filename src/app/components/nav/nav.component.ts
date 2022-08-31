@@ -15,7 +15,9 @@ export class NavComponent implements OnInit {
   @Input() activePage = '';
   showMenu = false;
   infoNav = {
-    whats: ""
+    whats: "",
+    whatsLogo: "",
+    logo: ""
   };
   listItemsMenu: ListMenuType[] = [{name:'Home', link: '/'}, {name: 'Sobre Nós',  link: '/sobre'}, {name: 'Empreendimentos',  link: '/empreendimentos'}, {name:  'Contato',  link: '/contato'}]
   constructor( private router: Router, private dataService: DataService) { }

@@ -2,7 +2,7 @@
 
 <app-carousel  [images]="imagesCarousel" [autoSlide]="true"></app-carousel>
 <div class="quem-somos">
-  <img class="squad-area"  src='../../../assets/simbolo.svg' style="width: 300px;"/>
+  <img class="squad-area"  [src]='info.simboloLogo' style="width: 300px;"/>
 
   <div  class="content-quem-somos">
     <div [class]=" showQuemSomos ? 'aparecer quem-somos-titulo' : 'esconder quem-somos-titulo'" style="display: flex;align-items: center; flex-direction:column;">
@@ -33,7 +33,7 @@
 
   </div>
 
-  <img class="squad-area" src='../../../assets/simbolo.svg' style="width: 300px; "/>
+  <img class="squad-area" [src]='info.simboloLogo' style="width: 300px; "/>
 </div>
 
 <div  [class]=" showQuemSomos   ? 'aparecer ' : 'esconder'"  class="content-slider">
@@ -41,3 +41,4 @@
 </div>
 
 
+<app-footer></app-footer>
